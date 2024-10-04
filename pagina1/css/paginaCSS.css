@@ -1,6 +1,15 @@
 #gridPlantilla{
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 10px;
+}
+
+nav{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    display: inline-block;
 }
