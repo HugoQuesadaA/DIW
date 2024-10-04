@@ -1,39 +1,40 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.navigation{
-    display: block;
-    margin: 100px 0px 0px;
+#navVertical {
+    width: 500px;
+
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainmenu {
+        margin: 200px 0 0 20px;
+    }
+
+    .mainmenu a {
+        display: block;
+        background-color: grey;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+
+    .mainmenu a:hover {
+        background-color: lightgrey;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .mainmenu li:hover .submenu {
+        display: block;
+    }
 }
-
-
-li a{
-    text-decoration: none;
-}
-
-li:hover{
-    background-color: lightgrey;
-}
-
-.mainmenu{
-    width: 50%;
-    background-color: grey;
-}
-
-.mainmenu li:hover .submenu{
-    display: block;  
-}
-
-.submenu{
-    background-color: beige;
-    display: none;
-}
-.submenu li{
-    list-style-type: none;
-    padding: 0px;
-}
-
-
