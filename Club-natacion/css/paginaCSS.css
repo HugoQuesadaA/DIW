@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#gridPlantilla{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+nav{
+    width: 500px;
+
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainmenu {
+        margin: 200px 0 0 20px;
+    }
+
+    .mainmenu a {
+        display: block;
+        background-color: #21618c;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+
+    .mainmenu a:hover {
+        background-color: #d6eaf8;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .submenu li a{
+        background-color: #85c1e9;
+    }
+
+    .mainmenu li:hover .submenu {
+        display: block;
+        
+    }
+}
+
+nav.horizontal{
+
+}
