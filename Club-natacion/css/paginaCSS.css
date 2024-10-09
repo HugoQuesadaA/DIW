@@ -53,10 +53,19 @@ h2 {
     font-size: 40px;
 }
 
-p {
+p,td,th{
     font-family: MonospaceBold, helvetica;
     color: #1b4f72;
     font-size: 22px;
+}
+
+table{
+    width: 80%;
+    padding-left: 30px;
+}
+
+td{
+    text-align: center;
 }
 
 details {
@@ -124,11 +133,18 @@ section.noticias article {
     box-sizing: border-box;
     grid-template-columns: auto auto auto;
     padding: 10px;
+    
+}
+
+#gridPlantilla img:hover{
+    width: 65%;
+    height: 65%;
 }
 
 #gridPlantilla img {
     width: 50%;
     height: 50%;
+    transition: width 1s linear;
 }
 
 figcaption {
