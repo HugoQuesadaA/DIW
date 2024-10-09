@@ -1,5 +1,49 @@
+@font-face {
+    font-family: NotoSansBold;
+    src: url(../fonts/noto-sans/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: MonospaceBold;
+    src: url(../fonts/monospace/MonospaceBold.ttf);
+}
+
+header{
+    width: 100%;
+    background-color: #042031;
+    display: inline-block; 
+}
+
+header img{
+    float: left;
+    padding-top: 20px;
+    width: 200px; height: 200px;
+}
+
+header h1{
+    text-align: center;
+}
+
 h1{
+    font-family: NotoSansBold, helvetica;
     color: #1b4f72;
+    font-size: 80px;
+}
+
+h2{
+    font-family: NotoSansBold, helvetica;
+    color: #1b4f72;
+    font-size: 40px;
+}
+
+p{
+    font-family: MonospaceBold;
+    color: #1b4f72;
+    font-size: 22px;
+}
+
+hr{
+    border: 1px solid #1b4f72;
 }
 
 body{
@@ -7,9 +51,33 @@ body{
 }
 
 section article{
-    display: inline-block;
-    width: 33%;
+    display: block;
+    width: 30%;
+    margin: 20px;
+    float: left;
 }
+
+.noticia1{
+    img{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.noticia2{
+    img{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.noticia3{
+    img{
+        width: 60%;
+        height: 60%;
+    }
+}
+
 
 #gridPlantilla{
     display: grid;
@@ -61,8 +129,6 @@ nav.vertical{
 */
 .horizontal{
 
-    display: inline;
-
     .mainmenu,
     .submenu {
         list-style: none;
@@ -73,6 +139,7 @@ nav.vertical{
     .mainmenu{
         background-color: #21618c;
         overflow: hidden; 
+        display: flex;
     }
 
     li{
@@ -94,7 +161,7 @@ nav.vertical{
     }
 
     .submenu{
-        display: block;
+        
         background-color: #21618c; 
         display: none;
         position: absolute;
