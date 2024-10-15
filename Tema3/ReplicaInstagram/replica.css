@@ -1,0 +1,43 @@
+.icono{
+    width: 150px;
+    height: 150px;
+    border-right: 3px solid black;
+    padding: 20px 20px 20px 0px;
+}
+
+.nombre{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+}
+
+.lupa{
+    width: 100px;
+    height: 75px;
+    padding: 20px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+}
+
+div{
+    width: 100px;
+    float: left;
+}
+
+header{
+    width: 100%;
+    float: left;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.body{
+    
+}

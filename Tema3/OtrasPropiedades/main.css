@@ -1,0 +1,80 @@
+.a {
+    float: left;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background-color: blue;
+}
+
+.b {
+    float: right;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background-color: lightblue;
+}
+
+.c {
+    float: right;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background-color: turquoise;
+}
+
+.d {
+    float: none;
+    clear: both;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background-color: skyblue;
+}
+
+.e {
+    float: left;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background-color: cadetblue;
+}
+
+.f {
+    float: right;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background-color:cornflowerblue;
+}
+
+p{
+    clear: both;
+}
+
+.z1{
+    width: 150px;
+    height: 200px;
+    background-color: chocolate;
+    position: relative;
+    z-index: 3;
+}
+
+.z2{
+    width: 150px;
+    height: 200px;
+    background-color:blueviolet;
+    position: relative;
+    left: 50px;
+    top: -110px;
+    z-index: 1;
+}
+
+.z3{
+    width: 150px;
+    height: 200px;
+    background-color:chartreuse;
+    position: relative;
+    left: 100px;
+    top: -210px;
+    z-index: 2;
+}

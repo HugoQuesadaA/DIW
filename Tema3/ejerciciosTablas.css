@@ -33,13 +33,15 @@
         color: #ddd;
     }
 
+    tr:nth-child(odd) td {
+        background-color: #f2f2f2;
+    }
+
     tbody tr:hover {
         background-color: #c7e2e0;
     }
 
-    tr:nth-child(odd) td {
-        background-color: #f2f2f2;
-    }
+    
 
 
 }
