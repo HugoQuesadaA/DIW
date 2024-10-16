@@ -20,16 +20,31 @@
 input{
     width: 300px;
     height: 40px;
+    text-align: center;
 }
 
-div{
-    width: 100px;
+div.l{
     float: left;
+    height: 200px;
+    margin: 10px;
+    width: 50%;
+    margin-left: 200px;
+}
+
+div.r{
+    float: right;
+    height: 200px;
+    margin: 10px;
+    width: 50%;
+}
+
+div.l,div.r{
+    display: flex;
+    align-items: center;
 }
 
 header{
     width: 100%;
-    float: left;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 
@@ -38,6 +53,74 @@ header{
     align-items: center;
 }
 
-.body{
-    
+.abajo{
+    width: 100%;
+    margin: 10%;
+}
+
+.abajo div{
+    float: left;
+}
+
+.cuerpo{
+    display: block;
+}
+
+.nombrePerfil{
+    align-items: center;
+    font-weight: bold;
+}
+
+.imagenPerfil{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid pink;
+    border-radius: 55%;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.perfil a:link{
+    color: blue;
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+.perfil a:visited{
+    color:rgb(104, 104, 252);
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+.perfil a:hover{
+    text-decoration: underline;
+}
+
+.check{
+    width: 40px;
+    height: 40px;
+}
+
+.poster{
+    position: relative;
+}
+
+.poster img{
+    position: absolute;
+}
+
+.poster,.cuerpo{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+.puntos{
+    width: 40px;
+    height: 40px;
+    margin: 0px 40px;
 }
