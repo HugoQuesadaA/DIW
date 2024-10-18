@@ -1,0 +1,25 @@
+body{
+    display: flex;
+}
+
+.leftNav{
+    width: 35%;
+    background-color: red;
+}
+
+.mainContent{
+    width: 65%;
+    background-color: cyan;
+}
+
+.experienciaLaboral{
+
+}
+
+.proyectos{
+    
+}
+
+.proyectos a{
+    text-decoration: none;
+}
