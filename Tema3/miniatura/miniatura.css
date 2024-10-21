@@ -1,0 +1,68 @@
+
+article{
+    width: 420px;
+    height: 140px;
+    background-color: darkgrey;
+}
+
+figure{
+    float: left;
+    margin: 0;
+}
+
+figure img{
+    width: 150px;
+    height: 100px;
+    padding: 20px 0px 0px 30px;
+}
+
+.datos-productos{
+    float: right;
+    margin: 20px 20px 0px 0px;
+}
+
+.datos-productos div{
+    margin: 5px;
+}
+
+.borrar{
+    display: block;
+    float: right;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+.nombre{
+    font-weight: bold;
+}
+
+.colores li{
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    border-radius: 12.5px;
+    margin: 10px 0px 0px 5px;
+    border: 1px solid black;
+
+}
+
+.colores li:nth-child(1){
+    background-color: black;
+}
+
+.colores li:nth-child(2){
+    background-color: burlywood
+}
+
+.colores li:nth-child(3){
+    background-color: grey;
+}
+
+.colores li:nth-child(4){
+    background-color: #bf8a3d
+}
+
+.colores li:nth-child(5){
+    background-color: #724625
+}
