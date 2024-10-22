@@ -2,7 +2,7 @@
 article{
     width: 420px;
     height: 140px;
-    background-color: darkgrey;
+    background-color: lightgray;
 }
 
 figure{
@@ -18,7 +18,7 @@ figure img{
 
 .datos-productos{
     float: right;
-    margin: 20px 20px 0px 0px;
+    margin: 10px 20px 0px 0px;
 }
 
 .datos-productos div{
@@ -27,14 +27,16 @@ figure img{
 
 .borrar{
     display: block;
+    font-weight: bold;
     float: right;
     border: 1px solid black;
-    padding: 5px;
+    padding: 2px 6px;
     border-radius: 25%;
 }
 
 .nombre{
     font-weight: bold;
+    clear: both;
 }
 
 .colores li{

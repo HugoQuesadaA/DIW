@@ -1,0 +1,45 @@
+@font-face {
+    font-family: TreeNight;
+    src: url(fonts/decorative_tree_night/Decorative\ font\ Tree\ Night.ttf);
+}
+
+@font-face {
+    font-family: Frightmare;
+    src: url(fonts/frightmare/Frightmare.ttf);
+}
+
+header{
+    height: 260px;
+    font-family: TreeNight;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    /* background-position: center */
+}
+
+
+#galeria{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.grid{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+}
+
+.grid img{
+    width: 80%;
+    height: 80%;
+}
+
+legend{
+    font-family: Frightmare;
+    font-size: 50px;
+}
+
+input{
+    margin: 5px;
+}
