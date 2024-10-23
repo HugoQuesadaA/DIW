@@ -9,12 +9,21 @@
 }
 
 header{
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+header h1{
     height: 260px;
     font-family: TreeNight;
-    font-size: 100px;
+    font-size: 80px;
+    font-weight: normal;
     width: 100%;
     text-align: center;
-    /* background-position: center */
+    padding-top: 20px;
+    margin: 0px;
 }
 
 
@@ -35,6 +44,10 @@ header{
     height: 80%;
 }
 
+#formulario{
+    margin: 10px 20px;
+}
+
 legend{
     font-family: Frightmare;
     font-size: 50px;
@@ -43,3 +56,8 @@ legend{
 input{
     margin: 5px;
 }
+
+#DNI{
+    margin-left: 29px;
+}
+

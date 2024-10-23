@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    <header>Fiesta de disfraces</header>
+    <header>
+        <h1>Fiesta de disfraces</h1>
+    </header>
     <nav>
         <ul>
             <li><a href="#presentacion">Presentación</a></li>
@@ -42,23 +44,24 @@
         </div>
     </section>
 
-    <section id="Inscripcion">
+    <section id="formulario">
         <form action="get">
             <fieldset>
                 <legend>Datos personales</legend>
-
-                <label for="nombre"></label>
-                <input id="nombre" name="nombre" type="text" placeholder="Nombre">
-                <div class="inputApellidos">
-                    <label for="apellido1"></label>
-                    <input id="apellido1" name="apellido1" type="text" placeholder="Primer Apellido">
-                    <label for="apellido2"></label>
-                    <input id="apellido2" name="apellido2" type="text" placeholder="Segundo Apellido">
+                <div>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text">
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" name="apellido" type="text">
                 </div>
+                <label for="DNI">DNI:</label>
+                <input id="DNI" name="DNI" type="text" pattern="[0-9]{8}[A-Za-z]{1}">
             </fieldset>
 
             <fieldset>
                 <legend>Datos de contacto</legend>
+                <label for="telefono"></label>
+                <label for="email"></label>
             </fieldset>
 
             <fieldset>
