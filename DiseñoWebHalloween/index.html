@@ -45,30 +45,60 @@
     </section>
 
     <section id="formulario">
-        <form action="get">
-            <fieldset>
+        <form action="">
+            <fieldset class="datosPersonales">
                 <legend>Datos personales</legend>
                 <div>
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" name="nombre" type="text">
-                <label for="apellido">Apellido:</label>
-                <input id="apellido" name="apellido" type="text">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Introduzca su nombre">
+                    <label for="apellido">Apellido:</label>
+                    <input id="apellido" name="apellido" type="text" placeholder="Introduzca su apellido">
                 </div>
                 <label for="DNI">DNI:</label>
-                <input id="DNI" name="DNI" type="text" pattern="[0-9]{8}[A-Za-z]{1}">
+                <input id="DNI" name="DNI" type="text" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="Introduzca su DNI">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="datosContacto">
                 <legend>Datos de contacto</legend>
-                <label for="telefono"></label>
-                <label for="email"></label>
+                <label for="telefono">Teléfono:</label>
+                <input id="telefono" name="telefono" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    placeholder="123-456-789">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com">
             </fieldset>
 
             <fieldset>
                 <legend>Datos de la reserva</legend>
+                <p>Modalidad a elegir:</p>
+                <input type="radio" id="mod1" name="mod" value="0-10">
+                <label for="mod1">De 0 a 10 años</label>
+                <br>
+                <input type="radio" id="mod2" name="mod" value="11-18">
+                <label for="mod2">De 11 a 18 años</label>
+                <br>
+                <input type="radio" id="mod3" name="mod" value="18-">
+                <label for="mod3">Mayor de 18 años</label>
+                <br>
+                <div class="comentarios">
+                    <label for="comentarios">Peticiones o comentarios adicionales:</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" rows="8" cols="40"
+                        placeholder="Introduzca su comentario."></textarea>
+                </div>
             </fieldset>
+            <input type="submit" onclick="myFunction()" value="Enviar">
+            <input type="reset" value="Restablecer">
         </form>
     </section>
+    <footer>
+        <p>Hugo Quesada Álvarez</p>
+        <a href="guiaEstilos.html">Guia de estilos.</a>
+    </footer>
+    <script>
+        function myFunction() {
+            alert("Se ha completado la reserva");
+        }
+    </script>
 </body>
 
 </html>
