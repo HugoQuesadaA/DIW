@@ -4,43 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fiesta de disfraces</title>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>Fiesta de disfraces</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#presentacion">Presentación</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#formulario">Inscripción</a></li>
-            <li><a href="#contacto"></a></li>
-        </ul>
-    </nav>
+        <header>
+            <h1>Fiesta de disfraces</h1>
+        </header>
+        <div class="sticky">
+        <nav>
+            <ul class="mainmenu">
+                <li><a href="#presentacion">Presentación</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#formulario">Inscripción</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <section class="presentacion">
-        <p></p>
-        <p></p>
+    <section id="presentacion">
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+            cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
+            los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+        <p> No sólo sobrevivió 500 años, sino que
+            tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+            Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem
+            Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
+            versiones de Lorem Ipsum.</p>
+        <div class="prueba">
+            <p class="p1">Calle cualquiera</p>
+            <p class="p2">31 de Octube</p>
+            <p class="p1">hora tal a tal</p>
+        </div>
         <table>
+            <thead>
+                <tr>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
 
+            </tbody>
         </table>
     </section>
 
     <section id="galeria">
         <div class="grid">
-            <p>0-10 años</p>
-            <p>11-17 años</p>
-            <p>Más de 18 años</p>
-            <img src="img/galeria/disfraz1.jpg" alt="">
-            <img src="img/galeria/disfraz1.jpg" alt="">
-            <img src="img/galeria/disfraz1.jpg" alt="">
-            <img src="img/galeria/disfraz1.jpg" alt="">
-            <img src="img/galeria/disfraz1.jpg" alt="">
-            <img src="img/galeria/disfraz1.jpg" alt="">
+            <figure>
+                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <figcaption></figcaption>
+            </figure>
         </div>
     </section>
 
@@ -90,7 +126,7 @@
             <input type="reset" value="Restablecer">
         </form>
     </section>
-    <footer>
+    <footer id="contacto">
         <p>Hugo Quesada Álvarez</p>
         <a href="guiaEstilos.html">Guia de estilos.</a>
     </footer>

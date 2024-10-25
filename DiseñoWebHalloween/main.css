@@ -8,18 +8,39 @@
     src: url(fonts/frightmare/Frightmare.ttf);
 }
 
-body{
-     /* background-color: #191919;  */
+@font-face {
+    font-family: HalloweenSpooky;
+    src: url(fonts/halloween_spooky_2/Halloween\ Spooky.otf);
 }
 
-header{
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+body {
+    background-color: #191919;
+    margin: 0px;
+}
+
+p {
+    color: #ffefc9;
+}
+
+.categoria {
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+header {
     background-image: url(img/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
 }
 
-header h1{
+header h1 {
     height: 260px;
     font-family: TreeNight;
     font-size: 80px;
@@ -30,50 +51,104 @@ header h1{
     margin: 0px;
 }
 
-
-#galeria{
-    width: 50%;
-    margin-left: 25%;
+.mainmenu {
+    display: flex;
+    background-color: #fe9600;
+    margin: 0px;
+    padding: 0px;
 }
 
-.grid{
+.mainmenu li {
+    width: 25%;
+    margin: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.mainmenu li a {
+    text-decoration: none;
+    color: #a21a00;
+    font-family: HalloweenSpooky;
+    font-size: 30px;
+}
+
+#presentacion{
+    margin: 0px 20px;
+}
+
+#galeria {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.grid {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: auto auto auto;
-    padding: 5%;
+    margin: 20px 0px;
+    background-color: #130912;
 }
 
-.grid img{
-    width: 80%;
-    height: 80%;
+.grid p {
+    text-align: center;
 }
 
-#formulario{
+.grid figure {
+    margin: 30px 80px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+}
+
+#formulario {
     margin: 10px 20px;
 }
 
-legend{
+legend {
     font-family: Frightmare;
     font-size: 50px;
 }
 
-input{
+input {
     margin: 10px;
 }
 
-.datosPersonales input::placeholder, .datosContacto input::placeholder{
+.datosPersonales input::placeholder,
+.datosContacto input::placeholder {
     text-align: center;
 }
 
-#DNI{
+#DNI {
     margin-left: 30px;
 }
 
-.comentarios{
+.comentarios {
     margin-top: 20px;
 }
 
-.comentarios textarea{
+.comentarios textarea {
     margin: 20px 0px 0px 10px;
 }
 
+#contacto{
+    margin: 20px 20px;
+}
+
+.prueba {
+    margin-left: 30%;
+}
+
+.prueba .p1 {
+    text-align: center;
+    width: 200px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    background-color: orange;
+    color: black;
+}
+
+.p2 {
+    background-image: url();
+}
