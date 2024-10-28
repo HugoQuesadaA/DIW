@@ -13,6 +13,11 @@
     src: url(fonts/halloween_spooky_2/Halloween\ Spooky.otf);
 }
 
+@font-face {
+    font-family: MidnightMinutes;
+    src: url(fonts/midnight_minutes/MidnightMinutes_DEMO.otf);
+}
+
 .sticky{
     position: -webkit-sticky;
     position: sticky;
@@ -51,25 +56,36 @@ header h1 {
     margin: 0px;
 }
 
-.mainmenu {
+h2{
+    color: #b14624;
+    font-family: MidnightMinutes;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+#mainmenu {
     display: flex;
     background-color: #fe9600;
     margin: 0px;
     padding: 0px;
 }
 
-.mainmenu li {
+#mainmenu li {
     width: 25%;
-    margin: 20px;
+    padding: 20px;
     list-style: none;
     text-align: center;
 }
 
-.mainmenu li a {
+#mainmenu li a {
     text-decoration: none;
     color: #a21a00;
     font-family: HalloweenSpooky;
     font-size: 30px;
+}
+
+#mainmenu li:hover{
+    background-color: #ffad3b;
 }
 
 #presentacion{
@@ -78,14 +94,14 @@ header h1 {
 
 #galeria {
     width: 80%;
-    margin-left: 10%;
+    margin: 0px 20px;
 }
 
 .grid {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: auto auto auto;
-    margin: 20px 0px;
+    margin-left: 10%;
     background-color: #130912;
 }
 
@@ -133,7 +149,10 @@ input {
 }
 
 #contacto{
-    margin: 20px 20px;
+    margin: 0px;
+    padding: 20px 20px;
+    border: 3px solid #b14624;
+    background-color:  #b14624;
 }
 
 .prueba {
@@ -147,8 +166,10 @@ input {
     border-radius: 30px;
     background-color: orange;
     color: black;
+    padding: 20px;
 }
 
 .p2 {
     background-image: url();
 }
+
