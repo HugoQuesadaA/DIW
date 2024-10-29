@@ -10,10 +10,10 @@
 </head>
 
 <body>
-        <header id="header">
-            <h1>Fiesta de disfraces</h1>
-        </header>
-        <div class="sticky">
+    <header id="header">
+        <h1>Fiesta de disfraces</h1>
+    </header>
+    <div class="sticky">
         <nav>
             <ul id="mainmenu">
                 <li><a href="#presentacion">Presentación</a></li>
@@ -26,19 +26,21 @@
 
     <section id="presentacion">
         <h2>Halloween La Rioja 2024</h2>
-        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-            cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y
-            los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-        <p> No sólo sobrevivió 500 años, sino que
-            tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
-            Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem
-            Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
-            versiones de Lorem Ipsum.</p>
-        <div class="prueba">
-            <p class="p1">31 de Octubre en el Ayuntamiento de Logroño</p>
-            <p class="p2">31 de Octube</p>
-            <p class="p1">hora tal a tal</p>
+        <div class="agruparInfoyImg">
+            <div class="info">
+                <h3>Información del evento</h3>
+                <p class="p1">31 de Octubre en el Ayuntamiento de Logroño</p>
+                <p class="p1">16:30 - 20:00</p>
+
+                <p class="rotate p1">400€ en premios</p>
+                <img class="murcielago" src="img/murcielagoGris.png" alt="dibujo de un murcielago">
+            </div>
+            <div class="imgInfo">
+                <img src="img/fiestaDisfraces.png" alt="fiesta de Disfraces">
+            </div>
+        </div>
+        <div class="categorias">
+            <h3>Categorias</h3>
         </div>
         <table>
             <thead>
@@ -107,15 +109,15 @@
 
             <fieldset>
                 <legend>Datos de la reserva</legend>
-                <p>Modalidad a elegir:</p>
-                <input type="radio" id="mod1" name="mod" value="0-10">
-                <label for="mod1">De 0 a 10 años</label>
+                <p>Categorias a elegir:</p>
+                <input type="radio" id="cat1" name="cat" value="0-10">
+                <label for="cat1">De 0 a 10 años</label>
                 <br>
-                <input type="radio" id="mod2" name="mod" value="11-18">
-                <label for="mod2">De 11 a 18 años</label>
+                <input type="radio" id="cat2" name="cat" value="11-18">
+                <label for="cat2">De 11 a 18 años</label>
                 <br>
-                <input type="radio" id="mod3" name="mod" value="18-">
-                <label for="mod3">Mayor de 18 años</label>
+                <input type="radio" id="cat3" name="cat" value="18+">
+                <label for="cat3">Mayor de 18 años</label>
                 <br>
                 <div class="comentarios">
                     <label for="comentarios">Peticiones o comentarios adicionales:</label>
@@ -129,9 +131,9 @@
         </form>
     </section>
     <footer id="contacto">
-        <a href="#header">Volver arriba</a>
+        <p><a href="#header">Volver arriba</a></p>
         <p>Hugo Quesada Álvarez</p>
-        <a href="guiaEstilos.html">Guia de estilos.</a>
+        <p><a href="guiaEstilos.html">Guia de estilos.</a></p>
     </footer>
     <script>
         function myFunction() {
@@ -139,4 +141,5 @@
         }
     </script>
 </body>
+
 </html>

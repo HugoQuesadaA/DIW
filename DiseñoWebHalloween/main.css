@@ -22,10 +22,11 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 body {
-    background-color: #191919;
+    background-color: #191919; /*background-color: grey; */
     margin: 0px;
 }
 
@@ -63,6 +64,15 @@ h2{
     font-size: 50px;
 }
 
+h3{
+    color: #b14624;
+    font-family: MidnightMinutes;
+    font-weight: 50;
+    font-size: 40px;
+    border-bottom: 2px solid #b14624;
+    display: inline;
+}
+
 #mainmenu {
     display: flex;
     background-color: #fe9600;
@@ -72,12 +82,13 @@ h2{
 
 #mainmenu li {
     width: 25%;
-    padding: 20px;
     list-style: none;
     text-align: center;
 }
 
 #mainmenu li a {
+    display: block;
+    padding: 20px;
     text-decoration: none;
     color: #a21a00;
     font-family: HalloweenSpooky;
@@ -92,17 +103,54 @@ h2{
     margin: 0px 20px;
 }
 
+.agruparInfoyImg div{
+    float: left;
+}
+
+.info {
+    display: inline-block;
+    align-items: center;
+}
+
+.imgInfo{
+
+}
+
+.info, .categorias{
+    margin: 0% 15%;
+}
+
+.categorias{
+    clear: both;
+}
+
+.rotate{
+    margin-left: 0;
+    margin-top: 200px;
+    transform: rotate(20deg);
+}
+
+.murcielago{
+    bottom: 285px;
+    right: 135px;
+    position: relative;
+    width: 80%;
+}
+
 #galeria {
     width: 80%;
     margin: 0px 20px;
 }
 
 .grid {
+    padding: 50px;
     display: grid;
     box-sizing: border-box;
     grid-template-columns: auto auto auto;
     margin-left: 10%;
     background-color: #130912;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .grid p {
@@ -110,7 +158,7 @@ h2{
 }
 
 .grid figure {
-    margin: 30px 80px;
+    margin: 0;
 }
 
 .grid img {
@@ -151,15 +199,24 @@ input {
 #contacto{
     margin: 0px;
     padding: 20px 20px;
-    border: 3px solid #b14624;
-    background-color:  #b14624;
+    background-color:  #130912;
+    display: flex;
 }
 
-.prueba {
-    margin-left: 30%;
+#contacto p, #contacto a{
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    text-align: center;
+    font-size: 20px;
 }
 
-.prueba .p1 {
+#contacto a {
+    color: #a21a00;
+    text-decoration: none;
+}
+
+p.p1 {
     text-align: center;
     width: 200px;
     border: 1px solid orange;
@@ -169,7 +226,4 @@ input {
     padding: 20px;
 }
 
-.p2 {
-    background-image: url();
-}
 
