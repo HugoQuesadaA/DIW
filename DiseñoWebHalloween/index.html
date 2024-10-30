@@ -31,8 +31,9 @@
                 <h3>Información del evento</h3>
                 <p class="p1">31 de Octubre en el Ayuntamiento de Logroño</p>
                 <p class="p1">16:30 - 20:00</p>
+                <p class="p1">Entradas para la participación del concurso por 2€</p>
 
-                <p class="rotate p1">400€ en premios</p>
+                <p class="rotate p1">450€ en premios</p>
                 <img class="murcielago" src="img/murcielagoGris.png" alt="dibujo de un murcielago">
             </div>
             <div class="imgInfo">
@@ -41,6 +42,11 @@
         </div>
         <div class="categorias">
             <h3>Categorias</h3>
+            <ul>
+                <li>Menores de 10 años</li>
+                <li>Entre 10 y 18 años</li>
+                <li>Mayores de 18 años</li>
+            </ul>
         </div>
         <table>
             <thead>
@@ -62,49 +68,50 @@
                 <figcaption></figcaption>
             </figure>
             <figure>
-                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <img src="img/galeria/disfraz2.jpg" alt="Disfraz">
                 <figcaption></figcaption>
             </figure>
             <figure>
-                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <img src="img/galeria/disfraz3.jpg" alt="Disfraz">
                 <figcaption></figcaption>
             </figure>
             <figure>
-                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <img src="img/galeria/disfraz4.jpg" alt="Disfraz">
                 <figcaption></figcaption>
             </figure>
             <figure>
-                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <img src="img/galeria/disfraz5.jpg" alt="Disfraz">
                 <figcaption></figcaption>
             </figure>
             <figure>
-                <img src="img/galeria/disfraz1.jpg" alt="Disfraz">
+                <img src="img/galeria/disfraz6.jpg" alt="Disfraz">
                 <figcaption></figcaption>
             </figure>
         </div>
     </section>
 
     <section id="formulario">
+        <h2>Contacto y Reserva</h2>
         <form action="">
             <fieldset class="datosPersonales">
                 <legend>Datos personales</legend>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Introduzca su nombre">
+                    <input id="nombre" name="nombre" type="text" placeholder="Introduzca su nombre" class="focus">
                     <label for="apellido">Apellido:</label>
-                    <input id="apellido" name="apellido" type="text" placeholder="Introduzca su apellido">
+                    <input id="apellido" name="apellido" type="text" placeholder="Introduzca su apellido" class="focus">
                 </div>
                 <label for="DNI">DNI:</label>
-                <input id="DNI" name="DNI" type="text" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="Introduzca su DNI">
+                <input id="DNI" name="DNI" type="text" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="Introduzca su DNI" class="focus">
             </fieldset>
 
             <fieldset class="datosContacto">
                 <legend>Datos de contacto</legend>
                 <label for="telefono">Teléfono:</label>
                 <input id="telefono" name="telefono" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                    placeholder="123-456-789">
+                    placeholder="123-456-789" class="focus">
                 <label for="email">Email:</label>
-                <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com">
+                <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" class="focus">
             </fieldset>
 
             <fieldset>
@@ -123,7 +130,7 @@
                     <label for="comentarios">Peticiones o comentarios adicionales:</label>
                     <br>
                     <textarea name="comentarios" id="comentarios" rows="8" cols="40"
-                        placeholder="Introduzca su comentario."></textarea>
+                        placeholder="Introduzca su comentario." class="focus"></textarea>
                 </div>
             </fieldset>
             <input type="submit" onclick="myFunction()" value="Enviar">
