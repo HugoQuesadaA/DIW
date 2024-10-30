@@ -116,7 +116,7 @@ h3{
 }
 
 #mainmenu li:hover{
-    background-color: #ffad3b;
+    background-color: orange;
 }
 
 #presentacion{
@@ -200,6 +200,13 @@ h3{
     margin: 10px 20px;
 }
 
+fieldset{
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #a21a00;
+}
+
 legend {
     font-family: Frightmare;
     font-size: 50px;
@@ -212,6 +219,8 @@ input {
 
 input,textarea{
     background-color: #ffefc9;
+    border: 2px solid #a21a00;
+    border-radius: 5px;
 }
 
 .focus{
@@ -221,6 +230,7 @@ input,textarea{
 
 .focus:focus{
     width: 180px;
+    border: 2px solid #a21a00;
     box-shadow: 0px 0px 30px #a21a00;
 }
 

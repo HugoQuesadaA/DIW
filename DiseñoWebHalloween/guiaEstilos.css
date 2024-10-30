@@ -1,0 +1,229 @@
+@font-face {
+    font-family: TreeNight;
+    src: url(fonts/decorative_tree_night/Decorative\ font\ Tree\ Night.ttf);
+}
+
+@font-face {
+    font-family: Frightmare;
+    src: url(fonts/frightmare/Frightmare.ttf);
+}
+
+@font-face {
+    font-family: HalloweenSpooky;
+    src: url(fonts/halloween_spooky_2/Halloween\ Spooky.otf);
+}
+
+@font-face {
+    font-family: MidnightMinutes;
+    src: url(fonts/midnight_minutes/MidnightMinutes_DEMO.otf);
+}
+
+body{
+    background-color: lightgrey;
+    margin: 0px;
+}
+
+header h1{
+    font-size: 80px;
+    font-weight: normal;
+    width: 100%;
+    padding-top: 30px;
+    margin: 0px 0px 0px 5%;
+}
+
+.h2Fuentes{
+    color: #b14624;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 10px 0px 30px 10px;
+}
+
+.fuentes,.colores,.formulario,.enlaces{
+    width: 90%;
+    margin: 5%;
+    border: 2px solid #a21a00;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.fuentes div{
+    margin: 10px;
+}
+
+.fuentes h1{
+    font-size: 80px;
+    font-weight: normal;
+    margin: 10px 0px 0px 10px;
+}
+
+.fuentes h2{
+    font-size: 50px;
+    font-weight: 100;
+    margin: 10px 0px 0px 10px;
+}
+
+.fuentes h3{
+    font-weight: 50;
+    font-size: 40px;
+    display: inline;
+    margin: 10px 0px 0px 10px;
+}
+
+.fuentes p{
+    font-family: helvetica;
+    font-size: 15px;
+    margin: 10px 0px 20px 10px;
+}
+
+.fuente1{
+    font-family: TreeNight;
+    font-size: 40px;
+}
+
+.fuente2{
+    font-family: Frightmare;
+    font-size: 40px;
+}
+
+.fuente3{
+    font-family: HalloweenSpooky;
+    font-size: 40px;
+}
+
+.fuente4{
+    font-family: MidnightMinutes;
+    font-size: 40px;
+}
+
+.fuente5{
+    font-family: helvetica;
+    font-size: 40px;
+}
+
+.colores{
+    height: 300px;
+}
+
+.c1,.c2,.c3,.c4,.c5{
+    width: 15%;
+    float: left;
+    margin-left: 5%;
+}
+
+.color1,.color2,.color3,.color4,.color5{
+    width: 100px;
+    height: 100px;
+}
+
+.color1{
+    background-color: #191919;
+}
+
+.color2{
+    background-color: #ffefc9;
+}
+
+.color3{
+    background-color: #ff8000; /*background-color: orange*/
+}
+
+.color4{
+    background-color: #b14624;
+}
+
+.color5{
+    background-color: #fe9600;
+}
+
+.enlacesFlex {
+    display: flex;
+    align-items: center;
+}
+
+#enH{
+    padding: 20px;
+    text-decoration: none;
+    color: #a21a00;
+    font-family: HalloweenSpooky;
+    font-size: 30px;
+    width: 5%;
+    background-color: #fe9600;
+    margin: 20px 20px 20px 25%;
+}
+
+#eH{
+    padding: 20px;
+    text-decoration: none;
+    color: #a21a00;
+    font-family: HalloweenSpooky;
+    font-size: 30px;
+    width: 10%;
+    background-color: orange;
+    margin: 20px;
+}
+
+#e{
+    color: #a21a00;
+    text-decoration: none;
+    width: 5%;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+form{
+    margin: 10px 20px;
+}
+
+fieldset{
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #a21a00;
+}
+
+legend{
+    font-family: Frightmare;
+    font-size: 50px;
+    color: #a21a00;
+}
+
+label{
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+input{
+    background-color: #ffefc9;
+}
+
+.inputs input{
+    width: 160px;
+    margin: 10px;
+}
+
+textarea{
+    width: 160px;
+    margin: 20px 20px 20px 10px;
+    background-color: #ffefc9;
+}
+
+.inputs input,textarea{
+    background-color: #ffefc9;
+    border: 2px solid #a21a00;
+    border-radius: 5px;
+}
+
+.focus{
+    width: 180px;
+    border: 2px solid #a21a00;
+    box-shadow: 0px 0px 30px #a21a00;
+}
+
+.syr{
+    margin-top: 20px;
+}
+
