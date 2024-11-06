@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Audi-Normal;
+    src: url(../fonts/Audi\ Type/auditype_extendednormal.ttf);
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    font-family: Arial;
+}
+
+nav div{
+    float: left;
+}
+
+.iconoAudi{
+    width: 10%;
+}
+
+.iconoAudi img{
+    width: 80px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.nav{
+    width: 80%;
+    font-family: Audi-Normal;
+    font-size: 15px;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav li{
+    display: inline;
+    padding: 20px 10px;
+}
+
+.nav div{
+    margin: 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav a:hover{
+    color: black;
+}
+
+.search{
+    width: 10%;
+}
+
+.search img{
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    background-color: grey;
+    height: 300px;
+}
