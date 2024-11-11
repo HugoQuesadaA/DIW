@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <h2>Imgagen gato dividida en 4 partes</h2>
+        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="imgPattern1" patternUnits="userSpaceOnUse" width="626" height="417">
+                    <image href="../EjemplosMáscaras/imgs/gato.jpg" width="626" height="417" />
+                </pattern>
+            </defs>
+            <mask id="imgMask1">
+                <rect x="0" y="0" width="626" height="129" fill="white" rx="10" ry="50"/>
+                <rect x="0" y="144" width="626" height="129" fill="white" rx="10" ry="50"/>
+                <rect x="0" y="288" width="626" height="129" fill="white" rx="10" ry="50"/>
+            </mask>
+            <rect x="0" y="0" width="626" height="417" fill="url(#imgPattern1)" mask="url(#imgMask1)" />
+        </svg>
+    </article>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+article{
+    margin: 1%;
+}
