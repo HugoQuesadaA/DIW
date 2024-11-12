@@ -9,16 +9,17 @@
 <body>
     <article>
         <h2>Imgagen gato dividida en 4 partes</h2>
-        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+        <svg width="50%" height="417" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <pattern id="imgPattern1" patternUnits="userSpaceOnUse" width="626" height="417">
                     <image href="../EjemplosMáscaras/imgs/gato.jpg" width="626" height="417" />
                 </pattern>
             </defs>
             <mask id="imgMask1">
-                <rect x="0" y="0" width="626" height="129" fill="white" rx="10" ry="50"/>
-                <rect x="0" y="144" width="626" height="129" fill="white" rx="10" ry="50"/>
-                <rect x="0" y="288" width="626" height="129" fill="white" rx="10" ry="50"/>
+                <rect x="0" y="0" width="125,2" height="129" fill="white" rx="10" ry="50"/>
+                <rect x="145,2" y="0" width="125,2" height="129" fill="white" rx="10" ry="50"/>
+                <rect x="290,4" y="0" width="125,2" height="129" fill="white" rx="10" ry="50"/>
+                <rect x="435.6" y="0" width="250,4" height="129" fill="white" rx="10" ry="50"/>
             </mask>
             <rect x="0" y="0" width="626" height="417" fill="url(#imgPattern1)" mask="url(#imgMask1)" />
         </svg>

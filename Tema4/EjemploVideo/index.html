@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <video autoplay muted loop id="myVideo">
+            <source src="videoej4.mp4" type="video/mp4" />
+            <p>El video no chuta</p>
+        </video>
+
+        <div class="video-title" id="videoTitle">
+            <p>IT'S TIMEEEEEEEE</p>
+        </div>
+
+        <div class="content">
+            <h2>Título</h2>
+            <p>Descripcion del video</p>
+            <div class="buttons">
+                <button id="btn" onclick="myFunction()">Pause</button>
+                <button id="soundBtn" onclick="soundMute()">
+                    <img src="img/sound.PNG" alt="sound/mute" id="soundImg">
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
