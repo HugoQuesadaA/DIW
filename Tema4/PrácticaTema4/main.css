@@ -1,10 +1,11 @@
 :root{
     --color-azul-principal: rgb(85, 101, 148);
     --color-azul-secundario: #00008b;
-    --color-blanco: #f1f1f1;
+    --color-blanco: #f9f9f9;
     --fuente-titulos: helvetica, arial;
     --oro:gold;
     --violeta-fondo:rgb(139,155,201);
+    --violeta-section: #adc4ff;
     --azul-boton:#537fee;
     --azul-boton-hover:rgb(0, 50, 255);
     --negro: rgb(0,0,0);
@@ -75,13 +76,26 @@ section{
     border: 2px outset var(--morado-borde);
     margin: 2%;
     /* margin: 2%; preguntar  si % o vw vh  */
-    background-color: var(--violeta-fondo);
+    background-color: var(--violeta-section);
     box-shadow: 0 5px 5px rgba(53, 53, 53, 0.7);
     border-radius: 8px;
 }
 
+section div{
+    text-align: justify;
+}
+
+.divPrincipal{
+    margin: 0.75vh 0.9vw;
+}
+
 .divPrincipal p{
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     margin: 1.5vh 0;
+}
+
+.divPrincipal h2{
+    font-size: clamp(2vw,2vw,4vw);
 }
 
 .video1section2{
@@ -123,14 +137,30 @@ section{
 }
 
 #soundBtn{
-    width: auto;
+    width: 4.5vw;
+    height: 4.5vw;
     cursor: pointer;
     border: none;
-    background-color: rgb(0, 0, 0, 0);
+    background-color: var(--color-blanco);
+    border: 1px solid var(--negro);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
 
+#soundBtn:hover{
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(53, 53, 53, 0.7);
+    transition: border 0s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+#soundImg{
+    width: 70%;
 }
 
 footer {
+    border-top: 2px outset var(--morado-borde);
     display: flex;
     background-color: var(--color-azul-principal);
     width: 100%;
@@ -160,8 +190,10 @@ footer {
     text-align: center;
     color:var(--oro);
 }
+
 #miembros p {
     margin: 0.75rem;
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 }
 
 #php{
@@ -189,6 +221,10 @@ footer {
         margin: 1rem 1rem;
     }
 
+    .divPrincipal h2{
+        font-size: clamp(5vw,5.5vw,6vw);
+    }
+
     #imgPHP, #infoHeader, #comercio, #miembros, #php {
         width: 100%;
         text-align: center;
@@ -200,7 +236,7 @@ footer {
 
     #myVideo{
         width: 80%;
-        margin: 1.5vh 10%; 
+        margin: 1.5vh 10%;
     }
 
     .boton {
@@ -211,6 +247,11 @@ footer {
     #myBtn {
         width: 30vw;
         padding: 1rem; 
+    }
+
+    #soundBtn{
+        width: 13vw;
+        height: 13vw;
     }
 
     header{  
