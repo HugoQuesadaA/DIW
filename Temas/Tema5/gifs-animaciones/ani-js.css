@@ -1,0 +1,51 @@
+.division{
+    display: flex;
+    align-items: center;
+}
+
+article{
+    flex: 1;
+}
+
+img{
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    display: block;
+
+    transition: transform 1s ease;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid green;
+    margin: 20px;
+
+    transition: transform 1s ease;
+}
+
+button{
+    background-color: cyan;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.caja-trans, .img-trans{
+    transform: translate(200px);
+}
+
+.caja-rot2d, .img-rot2d{
+    transform: rotate(45deg) scale(1.5);
+}
+
+.caja-rot3d, .img-rot3d{
+    transform: rotateX(60deg);
+}
+
+.caja-skew, .img-skew{
+    transform: skew(20deg, 20deg);
+}

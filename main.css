@@ -17,9 +17,20 @@ body{
 }
 
 .proyectos{
+    display: grid;
+    grid-template-columns: auto auto auto;
     
+    justify-content: center;
 }
 
 .proyectos a{
     text-decoration: none;
+    color: red;
+}
+
+.proyecto{
+    column-width: 15vw;
+    text-align: center;
+    background-color: rgb(0, 185, 185);
+    margin: 2vh 3vh;
 }
