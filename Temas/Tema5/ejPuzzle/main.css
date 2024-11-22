@@ -1,0 +1,78 @@
+div{
+    display: block;
+    height: 465px;
+    width: 465px;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.original{
+    position: relative;
+    margin-left: 300px;
+}
+
+.original img{
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+.original img:hover{
+    opacity: 1;
+}
+
+.original #pieza1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.original #pieza2{
+    position: absolute;
+    top: 0;
+    left: 220px;
+}
+
+.original #pieza3{
+    position: absolute;
+    top: 225px;
+    left: 30px;
+}
+
+.original2{
+    position: relative;
+    margin-left: 300px;
+    border: 2px solid orange;
+}
+
+.original2 #pieza1,
+.original2 #pieza2,
+.original2 #pieza3{
+    transition: transform 1s ease;
+}
+
+.original2:hover #pieza1, 
+.original2:hover #pieza2, 
+.original2:hover #pieza3{
+    transform: translateX(0px) translateY(0px);
+}
+
+.original2 #pieza1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-150%);
+}
+
+.original2 #pieza2{
+    position: absolute;
+    top: 0;
+    left: 220px;
+    transform: translateX(150%);
+}
+
+.original2 #pieza3{
+    position: absolute;
+    top: 225px;
+    left: 30px;
+    transform: translateY(150%);
+}
