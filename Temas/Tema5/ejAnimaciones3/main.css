@@ -52,16 +52,33 @@
 .img5{
     width: 20rem;
     height: 20rem;
+    transform-origin: center;
+    transition: transform 10s ease-in;
+}
+
+.img5:hover{
+    transform: scale(0.1);
 }
 
 .img6{
     width: 20rem;
     height: 20rem;
+    transition: all 4s;
+}
+
+.img6:hover{
+    transform: translateY(400px);
+    opacity: 0;
 }
 
 .img7{
     width: 20rem;
     height: 20rem;
+    transition: opacity 1s;
+}
+
+.img7:hover{
+    opacity: 0;
 }
 
 .superior{
