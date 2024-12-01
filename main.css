@@ -10,21 +10,37 @@
 }
 
 body{
-    cursor: url('img/cursor.png'),auto;
+    cursor: url('img/cursor2.png'),auto;
+}
+
+h1{
+    text-align: center;
+    margin: 5vh 1vw 8vh 1vh;
+    font-family: georgia, helvetica, arial;
+    font-size: 30px;
 }
 
 h2{
     font-family: georgia, helvetica, arial;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+h3{
+    font-family: helvetica, arial;
+    margin: 1vh 0 1vh 1vw;
+    font-size: 18px;
 }
 
 p ,li{
-    text-align: justify;
     font-family: helvetica, arial;
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 23px;
     margin-left: 1vw;
+}
+
+.sobreMi{
+    text-align: justify;
 }
 
 .targeta{
@@ -66,6 +82,10 @@ aside img{
     height: 25px;
 }
 
+.email{
+    padding: 1vh 0;
+}
+
 .infoAside {
     margin: 1vh 1vw 0 1vw;
     display: flex;
@@ -74,6 +94,10 @@ aside img{
 
 aside ul{
     margin-left: 1vw;
+}
+
+.hardSkills p{
+    margin: 1vh 0;
 }
 
 main{
@@ -89,6 +113,12 @@ main h2{
     background-color: azure;
     grid-column: 1 / 3;
     height: fit-content;
+}
+
+.proyectos h2{
+    text-align: center;
+    margin: 2vh;
+    text-decoration-line: underline;
 }
 
 .galeria{
@@ -123,8 +153,7 @@ main h2{
     border-radius: 5px;
     position: relative;
     text-align: center;
-    cursor: url('img/cursor-de-mano.png'),auto;
-    /* cursor: url('img/cursor-de-mano.png'),auto; */
+    cursor: url('img/cursor-de-mano2.png'),auto;
 }
 
 .galeria figure::after{
@@ -169,4 +198,64 @@ main h2{
 #figura5{
     transform: rotateZ(6deg);
     cursor: url('img/bloquear.png'), auto;
+}
+
+@media (max-width: 1200px) {
+    .galeria img{
+        min-width: 150px;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        padding: 50px 24%;
+    }
+
+    figure{
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 750px){
+    .targeta{
+        display: block;
+    }
+
+    aside,main,.proyectos{
+        display: block;
+        width: 100%;
+    }
+
+    .galeria img{
+        width: 80%;
+        height: 80%;
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    .galeria{
+        display: block;
+        padding: 3vh 13vw;
+    }
+
+    figure{
+        display: block;
+        margin: 3vh 0;
+    }
+}
+
+@media (max-width: 370px){
+    .galeria{
+        padding: 2vh 4vw
+    }
+
+    figcaption{
+        font-size: 10px;
+    }
+
+    li{
+        margin-left: 1rem;
+    }
+
 }
