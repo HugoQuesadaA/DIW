@@ -7,6 +7,8 @@ function girarCarta(cartaGirada) {
         cartaGirada.classList.add('girada');
         setTimeout(comparar, 900, cartaGirada);
     }
+    // cartaGirada.classList.toggle('girada');
+    // setTimeout(comparar,900,cartaGirada);
 }
 
 function comparar(carta2) {
