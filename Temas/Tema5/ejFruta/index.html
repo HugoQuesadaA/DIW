@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="tarjeta">
         <div class="divFruta"></div>
-        <div class="nombreFruta"><h1>Higos Ecoficus</h1></div>
+        <div class="nombreFruta">
+            <h1>Higos Ecoficus</h1>
+        </div>
         <div class="datos">
             <div class="tam">
-                <span class="peq"></span>
-                <span class="med"></span>
-                <span class="gra"></span>
+                <h2>Tamaño: </h2>
+                <span class="peq">Pequeño (1kg)</span>
+                <span class="med">Medio (1.5kg)</span>
+                <span class="gra">Grande (2kg)</span>
             </div>
-            <div></div>
-            <div></div>
+            <div class="unidades">
+                <h2>Unidades: </h2>
+                <div class="contenidoUnidades">
+                    <span class="menos">-</span>
+                    <input type="number">
+                    <span class="mas">+</span>
+                </div>
+            </div>
+            <div class="precio">
+                <h2>Precio: </h2>
+                <span class="precioCantidad">0</span>
+            </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
