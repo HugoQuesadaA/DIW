@@ -1,0 +1,35 @@
+@font-face {
+    font-family: a;
+    src: url(./EJ15.\ HOG/font);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 80vw;
+    height: 100vh;
+    background-image: url('./EJ15. HOG/media/40spIkbEsTnWd.jpg!w700wp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+}
+
+aside{
+    width: 20vw;
+}
+
+body{
+    display: flex;
+}
