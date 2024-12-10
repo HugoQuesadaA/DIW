@@ -1,17 +1,25 @@
 @font-face {
-    font-family: a;
-    src: url(./EJ15.\ HOG/font);
+    font-family: MerryChristmas;
+    src: url('./EJ15. HOG/fonts/MerryChristmasFlake.ttf');
+    src: url('./EJ15. HOG/fonts/MerryChristmasStar.ttf');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
-    width: 80vw;
-    height: 100vh;
+body {
+    /* border: 2rem solid brown; */
+    /* padding: 4vh 4vw; */
+    background-color: brown;
+    display: flex;
+}
+
+main {
+    width: 72vw;
+    height: 92vh;
     background-image: url('./EJ15. HOG/media/40spIkbEsTnWd.jpg!w700wp.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -19,17 +27,122 @@ main{
     position: relative;
 }
 
-main img{
+main img {
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
 }
 
-aside{
+aside {
     width: 20vw;
+    background-color: darkgreen;
 }
 
-body{
-    display: flex;
+aside p {
+    font-family: MerryChristmas;
+    font-size: 60px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 3vh 0;
+}
+
+aside button {
+    width: 10vw;
+    padding: 0.5rem;
+    margin: 3vh 5vw;
+    font-size: 25px;
+    background-color: darkred;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+aside button:hover {
+    cursor: pointer;
+}
+
+aside span {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: helvetica;
+    margin: 1vh 0;
+}
+
+#muñecoNieve {
+    top: 49vh;
+    left: 2vw;
+    transform: rotate(10deg);
+}
+
+#calcetin {
+    top: 54vh;
+    left: 21vw;
+    transform: rotate(-40deg);
+    width: 40px;
+}
+
+#baston {
+    top: 50vh;
+    left: 47vw;
+    transform: rotate(-20deg);
+    width: 35px;
+}
+
+#bolas {
+    top: 38vh;
+    left: 54vw;
+    transform: rotate(8deg);
+    width: 70px;
+}
+
+#copo {
+    top: 1vh;
+    left: 48.5vw;
+    width: 60px;
+}
+
+#galleta {
+    top: 50vh;
+    left: 50vw;
+    width: 60px;
+}
+
+#malvadiscos {
+    top: 50vh;
+    left: 50vw;
+    width: 60px;
+}
+
+#muerdago {
+    top: 50vh;
+    left: 50vw;
+    width: 60px;
+}
+
+#reno {
+    top: 50vh;
+    left: 50vw;
+    width: 60px;
+}
+
+#bolaNavidad {
+    top: 60vh;
+    left: 11vw;
+    width: 30px;
+}
+
+/* #telon {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+} */
+
+
+.acierto {
+    transform: scale(1.5) !important;
+    opacity: 0;
+    z-index: -1;
 }
