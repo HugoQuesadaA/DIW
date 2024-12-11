@@ -1,0 +1,53 @@
+body{
+    background-image: url('./water.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.onda > div{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #d7d7d7;
+    border-radius: 1000px;
+    opacity: 0;
+}
+
+.onda1{
+    animation: gota 4s infinite;
+}
+
+.onda2{
+    animation: gota 4s 0.3s infinite;
+}
+
+.onda3{
+    animation: gota 4s 0.6s infinite;
+}
+
+.onda4{
+    animation: gota 4s 0.9s infinite;
+}
+
+.onda5{
+    animation: gota 4s 1.2s infinite;
+}
+
+@keyframes gota {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(6);
+        opacity: 0;
+    }
+}
