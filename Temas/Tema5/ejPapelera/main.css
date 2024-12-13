@@ -10,6 +10,7 @@
 .inferior{
     top: 200px;
     left: 1200px;
+    z-index: 1;
 }
 
 .superior{
@@ -24,13 +25,14 @@
     top: 415px;
     left: 1038px;
     transform: scale(1.05);
-    z-index: 1;
+    z-index: 2;
 
     transition: all 1s;
 }
 
 .basura{
     top: 500px;
+    left: 0px;
     transform: scale(0.3);
 }
 
@@ -48,15 +50,25 @@
 
 @keyframes mover {
     0%{
+        top: 500px;
+        left: 0px;
     }
 
-    50%{
-        top: 200px;
+    40%{
+        top: 300px;
         left: 500px;
+        transform: scale(0.3) rotate(100deg);
+    }
+
+    85%{
+        top: 0px;
+        left: 1200px;
+        transform: scale(0.3) rotate(460deg);
     }
 
     100%{
-        top: 400px;
-        left: 200px;
+        top: 300px;
+        left: 1200px;
+        transform: scale(0.3) rotate(1000deg);
     }
 }
