@@ -1,0 +1,62 @@
+.papelera{
+    position: relative;
+    width: 100%;
+}
+
+.pedal,.inferior,.superior,.basura{
+    position: absolute;
+}
+
+.inferior{
+    top: 200px;
+    left: 1200px;
+}
+
+.superior{
+    top: -68px;
+    left: 1270px;
+    transform: rotate(-28deg);
+    transform-origin: 100% 75%;
+    transition: all 1s;
+}
+
+.pedal{
+    top: 415px;
+    left: 1038px;
+    transform: scale(1.05);
+    z-index: 1;
+
+    transition: all 1s;
+}
+
+.basura{
+    top: 500px;
+    transform: scale(0.3);
+}
+
+.pedal:hover{
+    transform: translateY(20px) scale(1.05);
+}
+
+.pedal:hover~.superior{
+    transform: rotate(5deg);
+}
+
+.pedal:hover~.basura{
+    animation: mover 2s 0s 1 forwards;
+}
+
+@keyframes mover {
+    0%{
+    }
+
+    50%{
+        top: 200px;
+        left: 500px;
+    }
+
+    100%{
+        top: 400px;
+        left: 200px;
+    }
+}
