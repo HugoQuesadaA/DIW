@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    font-family: helvetica;
+    font-size: 5vh;
+    letter-spacing: 1.5px;
+}
+
+.reloj{
+    width: 50vh;
+    margin-left: 38vw;
+
+    animation: girar 10s 0s 1 linear;
+}
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.progreso{
+    border: 1vh solid brown;
+    border-radius: 15rem;
+    width: 80%;
+    height: 10vh;
+    margin: 0 10%;
+    overflow: hidden;
+}
+
+.relleno{
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+
+    animation: barra 10s 0s 1 linear forwards;
+}
+
+@keyframes barra {
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: green;
+        width: 25%;
+    }
+    50%{
+        background-color: yellow;
+        width: 50%;
+    }
+    75%{
+        background-color: orange;
+        width: 75%;
+    }
+    80%{
+        background-color: red;
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+        background-color: red;
+    }
+}
