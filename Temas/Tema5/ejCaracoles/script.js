@@ -24,9 +24,9 @@ function avanzar(){
         caracol[0].nextElementSibling.style.opacity = 1;
     }
     if(distancia2 >= 80){
-        caracol[0].nextElementSibling.style.opacity = 1;
+        caracol[1].nextElementSibling.style.opacity = 1;
     }
     if(distancia3 >= 80){
-        caracol[0].nextElementSibling.style.opacity = 1;
+        caracol[2].nextElementSibling.style.opacity = 1;
     }
 }
