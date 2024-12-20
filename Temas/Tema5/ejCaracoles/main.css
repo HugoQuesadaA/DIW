@@ -1,5 +1,5 @@
 :root{
-    --tiempo: 0;
+
 }
 
 * {
@@ -8,11 +8,24 @@
     box-sizing: border-box;
 }
 
+button{
+    width: 6vw;
+    margin: 40vh 47vw 0;
+    display: block;
+    position: relative;
+}
+
 .camino {
+    position: relative;
     width: 80vw;
     height: 50px;
-    margin: 10vh 10vw;
+    margin: 5vh 10vw;
     background-color: chocolate;
+    background-image: url(./tierra.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .camino:nth-of-type(1) {
@@ -29,19 +42,14 @@
 
 .camino>img{
     height: 65px;
-    position: relative;
+    position: absolute;
     top: -10px;
-    left: 0px;
+    left: 0vw;
 
-    animation: caminar var(--tiempo) 1 linear;
+    transition: left 1s;
 }
 
-@keyframes caminar {
-    25%{
-        left: 25%;
-    }
-
-    100%{
-        left: 100%;
-    }
+.camino>h2{
+    color: white;
+    opacity: 0;
 }
