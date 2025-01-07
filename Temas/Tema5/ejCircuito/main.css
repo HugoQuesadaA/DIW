@@ -1,0 +1,97 @@
+.circuito{
+    background-image: url("circuito.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1000px;
+    height: 500px;
+
+    position: relative;
+}
+
+.coche{
+    position: absolute;
+    left: 450px;
+    top: 15px;
+    width: 100px;
+    transform: rotate(90deg);
+
+    animation: conducir2 6s infinite linear forwards;
+}
+
+@keyframes conducir {
+    0%{
+        left: 450px;
+        top: 15px;
+        transform: rotate(90deg);
+    }
+
+    20%{
+        left: 850px;
+        top: 15px;
+        transform: rotate(90deg);
+    }
+
+    40%{
+        left: 850px;
+        top: 290px;
+        transform: rotate(270deg);
+    }
+
+    60%{
+        left: 50px;
+        top: 290px;
+        transform: rotate(270deg);
+    }
+
+    80%{
+        left: 50px;
+        top: 15px;
+        transform: rotate(450deg);
+    }
+
+    100%{
+        left: 450px;
+        top: 15px;
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes conducir2 {
+    0%{
+        left: 450px;
+        top: 15px;
+        transform: rotate(90deg);
+    }
+
+    15%{
+        left: 850px;
+        top: 15px;
+        transform: rotate(90deg);
+    }
+
+    35%{
+        left: 850px;
+        top: 290px;
+        transform: rotate(270deg);
+    }
+
+    65%{
+        left: 50px;
+        top: 290px;
+        transform: rotate(270deg);
+    }
+
+    85%{
+        left: 50px;
+        top: 15px;
+        transform: rotate(450deg);
+    }
+
+    100%{
+        left: 450px;
+        top: 15px;
+        transform: rotate(450deg);
+    }
+}
+

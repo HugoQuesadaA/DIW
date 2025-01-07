@@ -1,0 +1,123 @@
+.contenedor{
+    background-image: url("imgs/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 1085px;
+    height: 600px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.coche_cont,.arbol{
+    position: absolute;
+}
+
+.arbol_copa,.arbol_tronco{
+    position: absolute;
+    left: 600px;
+    top: 80px;
+    width: 450px;
+}
+
+.arbol_copa{
+    animation: caer_arbol 1s 2.5s 1 linear forwards;
+}
+
+.coche_cont{
+    top: 400px;
+    left: 50px;
+
+    animation: arrancar_coche 1.5s 1s 1 linear forwards;
+}
+
+.coche{
+    position: absolute;
+    width: 300px;
+}
+
+.rueda{
+    animation: rodar 2s 1s 1 forwards;
+}
+
+.rueda:nth-of-type(2){
+    position: absolute;
+    left: 53px;
+    top: 93px;
+    width: 70px;
+    z-index: 1;
+}
+
+.rueda:nth-of-type(3){
+    position: absolute;
+    left: 204px;
+    top: 93px;
+    width: 70px;
+    z-index: 1;
+}
+
+.explosion{
+    position: absolute;
+    width: 100px;
+    top: 360px;
+    left: 720px;
+    opacity: 0;
+    animation: choque 2s 2s 1 backwards;
+}
+
+.fuego{
+    position: absolute;
+    width: 70px;
+    top: 410px;
+    left: 720px;
+    opacity: 0;
+    animation: choque 2s 3s linear forwards;
+}
+
+@keyframes arrancar_coche {
+    0%{
+        transform: translateX(0);
+    }
+
+    90%{
+        transform: translateX(420px);
+    }
+
+    100%{
+        transform: translateX(470px) rotateY(30deg);
+    }
+}
+
+@keyframes caer_arbol {
+    0%{
+
+    }
+
+    100%{
+        transform: rotate(-90deg) translate(-150px,-550px);
+    }
+}
+
+@keyframes choque {
+    0%{
+        opacity: 0;
+    }
+    58%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rodar {
+    0%{
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
