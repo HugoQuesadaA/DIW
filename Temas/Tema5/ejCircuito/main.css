@@ -1,12 +1,28 @@
+:root{
+    --x-derecha: 400px;
+    --x-izquierda: -400px;
+    --y-arriba: -45px;
+    --y-abajo: 230px;
+}
+
 .circuito{
-    background-image: url("circuito.jpg");
+    /* background-image: url("circuito.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
     width: 1000px;
     height: 500px;
 
     position: relative;
+}
+
+.fondo{
+    width: 100%;
+    height: auto;
+}
+
+.circuito:hover .coche, .circuito:hover .tractor{
+    animation-play-state: running;
 }
 
 .coche{
@@ -15,83 +31,77 @@
     top: 15px;
     width: 100px;
     transform: rotate(90deg);
+    animation: conducir 6s 1 linear forwards;
+    animation-play-state: paused;
+}
 
-    animation: conducir2 6s infinite linear forwards;
+.tractor{
+    position: absolute;
+    left: 450px;
+    top: 32px;
+    width: 100px;
+    transform: rotate(90deg);
+    animation: conducir 10s 1 linear forwards;
+    animation-play-state: paused;
 }
 
 @keyframes conducir {
     0%{
-        left: 450px;
-        top: 15px;
-        transform: rotate(90deg);
+        transform: translate(0px,var(--y-arriba)) rotate(90deg);
     }
 
     20%{
-        left: 850px;
-        top: 15px;
-        transform: rotate(90deg);
+        transform: translate(var(--x-derecha),var(--y-arriba)) rotate(90deg);
+    }
+
+    30%{
+        transform: translate(var(--x-derecha), calc( (var(--y-arriba) + var(--y-abajo)) / 2 )) rotate(180deg);
     }
 
     40%{
-        left: 850px;
-        top: 290px;
-        transform: rotate(270deg);
+        transform: translate(var(--x-derecha),var(--y-abajo)) rotate(270deg);
     }
 
     60%{
-        left: 50px;
-        top: 290px;
-        transform: rotate(270deg);
+        transform: translate(var(--x-izquierda),var(--y-abajo)) rotate(270deg);
+    }
+
+    70%{
+        transform: translate(var(--x-izquierda), calc( (var(--y-arriba) + var(--y-abajo)) / 2 )) rotate(360deg);
     }
 
     80%{
-        left: 50px;
-        top: 15px;
-        transform: rotate(450deg);
+        transform: translate(var(--x-izquierda),var(--y-arriba)) rotate(450deg);
     }
 
     100%{
-        left: 450px;
-        top: 15px;
-        transform: rotate(450deg);
+        transform: translate(0px,var(--y-arriba)) rotate(450deg);
     }
 }
 
 @keyframes conducir2 {
     0%{
-        left: 450px;
-        top: 15px;
-        transform: rotate(90deg);
+        transform: translate(0px,0px) rotate(90deg);
     }
 
     15%{
-        left: 850px;
-        top: 15px;
-        transform: rotate(90deg);
+        transform: translate(400px,0px) rotate(90deg);
     }
 
     35%{
-        left: 850px;
-        top: 290px;
-        transform: rotate(270deg);
+        transform:  translate(400px,270px) rotate(270deg);
     }
 
     65%{
-        left: 50px;
-        top: 290px;
-        transform: rotate(270deg);
+        transform:  translate(-400px,270px) rotate(270deg);
     }
 
     85%{
-        left: 50px;
-        top: 15px;
-        transform: rotate(450deg);
+        transform:  translate(-400px,0px) rotate(450deg);
     }
 
     100%{
-        left: 450px;
-        top: 15px;
-        transform: rotate(450deg);
+        transform:  translate(0px,0px) rotate(450deg);
     }
 }
 

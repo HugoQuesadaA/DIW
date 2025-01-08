@@ -1,0 +1,74 @@
+:root{
+    --x-inicio: 480px;
+    --x-1: 750px;
+    --x-2: 380px;
+    --x-3: 0;
+    --x-4: 0;
+    --y-1: 65px;
+    --y-2: 140px;
+    --y-3: 260px;
+    --y-4: 350px;
+    --y-5: 0;
+}
+
+.contenedor{
+    position: relative;
+}
+
+.circuito{
+    width: 50%;
+    height: auto;
+}
+
+.coche{
+    position: absolute;
+    width: 50px;
+    transform: rotate(90deg);
+    top: var(--y-1);
+    left: var(--x-inicio);
+
+    animation: carrera 6s 2 forwards;
+}
+
+@keyframes carrera{
+    0%{
+        transform: translate(var(--x-inicio),var(--y-1)) rotate(90deg);
+    }
+
+    10%{
+        transform: translate(var(--x-1),var(--y-1)) rotate(90deg);
+    }
+
+    15%{
+        transform: translate(var(--x-1),var(--y-2)) rotate(250deg);
+    }
+
+    30%{
+        transform: translate(var(--x-2),var(--y-3)) rotate(90deg);
+    }
+
+    35%{
+        transform: translate(var(--x-2),var(--y-4)) rotate();
+    }
+
+    45%{
+        transform: translate(var(--x-3),var(--y-4)) rotate();
+    }
+
+    50%{
+        transform: translate(var(--x-3),var(--y-5)) rotate();
+    }
+
+    70%{
+        transform: translate(var(--x-4),var(--y-5)) rotate();
+    }
+
+    90%{
+        transform: translate(var(--x-4),var(--y-1)) rotate();
+    }
+
+    100%{
+        transform: translate(var(--x-inicio),var(--y-1)) rotate();
+    }
+}
+
