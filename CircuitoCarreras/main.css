@@ -2,13 +2,17 @@
     --x-inicio: 480px;
     --x-1: 750px;
     --x-2: 380px;
-    --x-3: 0;
-    --x-4: 0;
+    --x-3: 800px;
+    --x-4: 220px;
+    --x-5: 150px;
+    --x-6: 220px;
     --y-1: 65px;
     --y-2: 140px;
     --y-3: 260px;
-    --y-4: 350px;
-    --y-5: 0;
+    --y-4: 360px;
+    --y-5: 510px;
+    --y-6: 430px;
+    --y-7: 160px;
 }
 
 .contenedor{
@@ -16,18 +20,33 @@
 }
 
 .circuito{
+    position: absolute;
     width: 50%;
     height: auto;
+}
+
+.bandera{
+    position: absolute;
+    width: 80px;
+    transform: translate(500px, 20px);
 }
 
 .coche{
     position: absolute;
     width: 50px;
-    transform: rotate(90deg);
-    top: var(--y-1);
-    left: var(--x-inicio);
+    transform: translate(var(--x-6),var(--y-1)) rotate(90deg);
+}
 
-    animation: carrera 6s 2 forwards;
+.c1{
+    animation: carrera 9s 2 linear forwards;
+}
+
+.c2{
+    animation: carrera 8s 2 linear forwards;
+}
+
+.c3{
+    animation: carrera 10s 2 linear forwards;
 }
 
 @keyframes carrera{
@@ -44,31 +63,39 @@
     }
 
     30%{
-        transform: translate(var(--x-2),var(--y-3)) rotate(90deg);
+        transform: translate(var(--x-2),var(--y-3)) rotate(250deg);
     }
 
     35%{
-        transform: translate(var(--x-2),var(--y-4)) rotate();
-    }
-
-    45%{
-        transform: translate(var(--x-3),var(--y-4)) rotate();
+        transform: translate(var(--x-2),var(--y-4)) rotate(90deg);
     }
 
     50%{
-        transform: translate(var(--x-3),var(--y-5)) rotate();
+        transform: translate(var(--x-3),var(--y-4)) rotate(90deg);
+    }
+
+    56%{
+        transform: translate(var(--x-3),var(--y-5)) rotate(270deg);
     }
 
     70%{
-        transform: translate(var(--x-4),var(--y-5)) rotate();
+        transform: translate(var(--x-4),var(--y-5)) rotate(270deg);
+    }
+
+    75%{
+        transform: translate(var(--x-5),var(--y-6)) rotate(360deg);
+    }
+
+    85%{
+        transform: translate(var(--x-5),var(--y-7)) rotate(360deg);
     }
 
     90%{
-        transform: translate(var(--x-4),var(--y-1)) rotate();
+        transform: translate(var(--x-6),var(--y-1)) rotate(450deg);
     }
 
     100%{
-        transform: translate(var(--x-inicio),var(--y-1)) rotate();
+        transform: translate(var(--x-inicio),var(--y-1)) rotate(450deg);
     }
 }
 
