@@ -197,7 +197,11 @@ main h2{
 
 #figura5{
     transform: rotateZ(6deg);
-    cursor: url('img/bloquear.png'), auto;
+    /* cursor: url('img/bloquear.png'), auto; */
+}
+
+#figura6{
+    transform: rotateZ(-3deg);
 }
 
 @media (max-width: 1200px) {
