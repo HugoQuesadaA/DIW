@@ -2,21 +2,31 @@
     --x-inicio: 480px;
     --x-1: 750px;
     --x-2: 380px;
-    --x-3: 800px;
-    --x-4: 220px;
-    --x-5: 150px;
-    --x-6: 220px;
+    --x-3: 730px;
+    --x-4: 820px;
+    --x-5: 220px;
+    --x-6: 150px;
+    --x-7: 220px;
     --y-1: 65px;
     --y-2: 140px;
     --y-3: 260px;
     --y-4: 360px;
-    --y-5: 510px;
-    --y-6: 430px;
-    --y-7: 160px;
+    --y-5: 430px;
+    --y-6: 510px;
+    --y-7: 430px;
+    --y-8: 160px;
 }
 
 .contenedor{
     position: relative;
+}
+
+.circuito{
+    z-index: 0;
+}
+
+.semaforo, .coche{
+    z-index: 1;
 }
 
 .circuito{
@@ -29,24 +39,123 @@
     position: absolute;
     width: 80px;
     transform: translate(500px, 20px);
+    opacity: 0;
+    animation: finish 0.2s 20s forwards;
+}
+
+@keyframes finish{
+    0%{
+        opacity: 0;
+    }
+
+    95%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.salida{
+    position: absolute;
+    width: 80px;
+    transform: translate(500px,105px) rotate(90deg);
+}
+
+.semaforo{
+    position: absolute;
+    width: 180px;
+    transform: translate(350px, 0px);
+}
+
+.carcasa{
+    position: absolute;
+    width: 50px;
+    height: 72px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.rojo{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left: 17px;
+    background-color: black;
+    border-radius: 50%;
+    animation: rojo 0.2s 1s forwards;
+}
+
+@keyframes rojo{
+    0%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: red;
+    }
+}
+
+.amarillo{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 31px;
+    left: 17px;
+    background-color: black;
+    border-radius: 50%;
+    animation: amarillo 0.2s 2.5s forwards;
+}
+
+@keyframes amarillo{
+    0%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: yellow;
+    }
+}
+
+.verde{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 55px;
+    left: 17px;
+    background-color: black;
+    border-radius: 50%;
+    animation: verde 0.2s 4s forwards;
+}
+
+@keyframes verde{
+    0%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: green;
+    }
 }
 
 .coche{
     position: absolute;
     width: 50px;
-    transform: translate(var(--x-6),var(--y-1)) rotate(90deg);
+    transform: translate(var(--x-inicio),var(--y-1)) rotate(90deg);
 }
 
 .c1{
-    animation: carrera 9s 2 linear forwards;
+    animation: carrera 9s 4.2s 2 linear forwards;
 }
 
 .c2{
-    animation: carrera 8s 2 linear forwards;
+    animation: carrera 8s 4.2s 2 linear forwards;
 }
 
 .c3{
-    animation: carrera 10s 2 linear forwards;
+    animation: carrera 10s 4.2s 2 linear forwards;
 }
 
 @keyframes carrera{
@@ -74,24 +183,28 @@
         transform: translate(var(--x-3),var(--y-4)) rotate(90deg);
     }
 
-    56%{
-        transform: translate(var(--x-3),var(--y-5)) rotate(270deg);
+    54%{
+        transform: translate(var(--x-4),var(--y-5)) rotate(180deg);
+    }
+
+    58%{
+        transform: translate(var(--x-3),var(--y-6)) rotate(270deg);
     }
 
     70%{
-        transform: translate(var(--x-4),var(--y-5)) rotate(270deg);
+        transform: translate(var(--x-5),var(--y-6)) rotate(270deg);
     }
 
     75%{
-        transform: translate(var(--x-5),var(--y-6)) rotate(360deg);
+        transform: translate(var(--x-6),var(--y-7)) rotate(360deg);
     }
 
     85%{
-        transform: translate(var(--x-5),var(--y-7)) rotate(360deg);
+        transform: translate(var(--x-6),var(--y-8)) rotate(360deg);
     }
 
     90%{
-        transform: translate(var(--x-6),var(--y-1)) rotate(450deg);
+        transform: translate(var(--x-7),var(--y-1)) rotate(450deg);
     }
 
     100%{
