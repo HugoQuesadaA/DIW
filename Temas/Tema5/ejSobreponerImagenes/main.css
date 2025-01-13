@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.canales{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+
+    margin: 5vh 10vw;
+}
+
+.canal {
+    width: 400px;
+    height: 300px;
+
+    animation: mover 5s 1s infinite linear;
+}
+
+@keyframes mover{
+    0%{
+        transform: translate(0%);
+    }
+
+    20%{
+        transform: translate(0%);
+    }
+
+    40%{
+        transform: translate(-100%);
+    }
+
+    60%{
+        transform: translate(-100%);
+    }
+
+    80%{
+        transform: translate(-200%);
+    }
+
+    90%{
+        transform: translate(-200%);
+    }
+}
+
