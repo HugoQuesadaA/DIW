@@ -1,0 +1,43 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.div1{
+    background-image: url('img1.webp');
+    /* Reemplaza con tu imagen */
+    height: 100vh;
+    /* Altura del viewport */
+    background-attachment: fixed;
+    /* Clave para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div2{
+    background-image: url('img2.avif');
+    /* Reemplaza con tu imagen */
+    height: 100vh;
+    /* Altura del viewport */
+    background-attachment: fixed;
+    /* Clave para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div3{
+    background-image: url('img3.jpg');
+    /* Reemplaza con tu imagen */
+    height: 100vh;
+    /* Altura del viewport */
+    background-attachment: fixed;
+    /* Clave para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,54 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.div1,.div2,.div3{
+    width: 70vw;
+    height: 70vh;
+    margin: 0 15vw;
+}
+
+.texto{
+    background-color: black;
+    color: white;
+    width: 90vw;
+    height: 20vh;
+    padding: 5vw;
+}
+
+
+
+.div1{
+    background-image: url('img.jpg');
+    /* Reemplaza con tu imagen */
+    background-attachment: fixed;
+    /* Clave para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div2{
+    background-image: url('img.jpg');
+    /* Reemplaza con tu imagen */
+    background-attachment: fixed;
+    /* Clave para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div3{
+    background-image: url('img.jpg');
+    /* Reemplaza con tu imagen */
+    background-attachment: fixed;
+    /* Clave para el efecto Parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
