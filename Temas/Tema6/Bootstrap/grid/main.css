@@ -1,0 +1,9 @@
+.row>div{
+    border: 5px solid yellow;
+    background-color: goldenrod;
+}
+
+.container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
