@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#sky{
+    height: 70vh;
+    width: 100vw;
+    background-color: steelblue;
+    position: relative;
+
+    animation: animacionCielo 15s infinite linear;
+}
+
+@keyframes animacionCielo{
+    0%{
+        background-color: darkblue;
+    }
+
+    20%{
+        background-color: steelblue;
+    }
+
+    30%{
+        background-color: steelblue;
+    }
+
+    50%{
+        background-color: darkblue;
+    }
+
+    70%{
+        background-color: steelblue;
+    }
+
+    80%{
+        background-color: steelblue;
+    }
+
+    100%{
+        background-color: darkblue;
+    }
+}
+
+.cloud{
+    border-radius: 20px;
+    width: 6vw;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    z-index: 1;
+
+    animation: animacionNube 6s infinite linear;
+}
+
+.cloud::before{
+    content: "";
+    border-radius: 20px;
+    width: 3vw;
+    height: 5vh;
+    top: -10px;
+    left: -5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+}
+
+.cloud::after{
+    content: "";
+    border-radius: 20px;
+    width: 4vw;
+    height: 5vh;
+    top: 10px;
+    right: -5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+}
+
+.cloud-1{
+    top: 5vh;
+    left: 0vw;
+}
+
+.cloud-2{
+    top: 18vh;
+    left: -25vw;
+}
+
+.cloud-3{
+    top: 38vh;
+    left: 10vw;
+}
+
+@keyframes animacionNube{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(100vw);
+    }
+}
+
+#sun{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: gold;
+    bottom: 0px;
+    right: 0px;
+
+    animation: animacionSol 15s infinite linear;
+}
+
+@keyframes animacionSol{
+    0%{
+        transform: translate(5vw,10vh) scale(0);
+    }
+
+    20%{
+        transform: translate(-50vw,-40vh) scale(1);
+    }
+
+    30%{
+        transform: translate(-50vw,-40vh) scale(1);
+    }
+
+    50%{
+        transform: translate(-105vw,10vh) scale(0);
+    }
+
+    70%{
+        transform: translate(-50vw,-40vh) scale(1);
+    }
+
+    80%{
+        transform: translate(-50vw,-40vh) scale(1);
+    }
+
+    100%{
+        transform: translate(5vw,10vh) scale(0);   
+    }
+}
