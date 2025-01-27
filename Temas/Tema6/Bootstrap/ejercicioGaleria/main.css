@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+figure{
+    position: relative;
+    overflow: hidden;
+}
+
+figure:hover figcaption{
+    opacity: 1;
+    display: block;
+}
+
+figure:hover img{
+    transform: scale(1.2);
+}
+
+img{
+    transition: all 0.5s;
+}
+
+figcaption{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+
+    transition: all 0.5s;
+}
+
