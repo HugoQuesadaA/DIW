@@ -23,6 +23,43 @@
                 background-color: rgb(51, 255, 60);
             }
         }
+
+        @media (max-width: 576px) {
+            #tres{
+                background-color: red;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            #tres{
+                background-color: rgb(51, 255, 60);
+            }
+        }
+
+        @media (min-width: 768px) {
+            #tres{
+                background-color: red;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #dos{
+                background-color: rgb(59, 254, 254);
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            #dos{
+                background-color: red;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #dos{
+                background-color: red;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -31,13 +68,13 @@
             <div class="col-12"><div id="header" class="contenido p-2 text-start">Header</div></div>
         </div>
         <div class="row h-75">
-            <div class="col-md-4 col-sm-6 mb-2"><div class="contenido bg-danger fs-1 h-100 text-center p-2">1</div></div>
-            <div class="col-md-4 col-sm-6 mb-2"><div class="contenido bg-danger fs-1 h-100 text-center p-2">2</div></div>
-            <div class="col-md-4 col-sm-12 mb-2"><div class="contenido  bg-danger fs-1 h-100 text-center p-2">3</div></div>
+            <div class="col-md-4 col-sm-6 mb-2"><div class="contenido bg-danger fs-1 h-100 text-md-center text-start p-2">1</div></div>
+            <div class="col-md-4 col-sm-6 mb-2"><div id="dos" class="contenido fs-1 h-100 text-md-center text-sm-end text-center p-2">2</div></div>
+            <div class="col-md-4 col-sm-12 mb-2"><div id="tres" class="contenido fs-1 h-100 text-sm-center text-end p-2">3</div></div>
         </div>
         <div class="row">
-            <div class="col-6"><div class="contenido bg-warning p-2 text-end">Footer 1</div></div>
-            <div class="col-6"><div class="contenido bg-warning p-2 text-start">Footer 2</div></div>
+            <div class="col-md-6 col-12 mb-2"><div class="contenido bg-warning p-2 text-md-end text-center">Footer 1</div></div>
+            <div class="col-md-6 col-12"><div class="contenido bg-warning p-2 text-md-start text-center">Footer 2</div></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
