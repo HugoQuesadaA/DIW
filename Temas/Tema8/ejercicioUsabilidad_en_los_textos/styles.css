@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f0f0;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    max-width: 950px;
+    line-height: 1.8rem;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+p {
+    margin-bottom: 14px;
+}
+.content-box {
+    background-color: #999999;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+}
+a {
+    color: #0000ff;
+}
+
+.enlaceClick{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #999999;
+    text-decoration: none;
+    color: white;
+}
