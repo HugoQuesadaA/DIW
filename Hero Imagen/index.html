@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <div class="fondo1">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div id="seccion1">
+        <div id="s1f1" class="fondo"></div>
+        <div id="s1f2" class="fondo"></div>
+        <div id="s1f3" class="fondo"></div>
     </div>
-    <div class="fondo2">
+    <div id="seccion2">
         <div></div>
         <div></div>
         <div></div>
-    </div>
-    <div class="botones">
-        <button></button>
-        <button></button>
-        <button></button>
+        <div id="botones">
+            <button class="buttonWhite boton" onclick="moverFondo(0, this)"></button>
+            <button class="boton" onclick="moverFondo(100, this)"></button>
+            <button class="boton" onclick="moverFondo(200, this)"></button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

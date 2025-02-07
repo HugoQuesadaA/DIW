@@ -8,26 +8,37 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
 }
 
-.fondo1{
+#seccion1{
     width: 100vw;
     height: 70vh;
+
+    position: relative;
 }
 
-.fondo1:nth-child(){
-    background-color: red;
+#seccion1 div{
     width: 100%;
     height: 100%;
+
+    position: absolute;
+    transition: all 1s;
 }
 
-.fondo1:nth-child(2){
+#s1f1{
+    background-color: red;
+    left: 0;
+}
+
+#s1f2{
     background-color: blue;
+    left: 100%;
 }
 
-.fondo1:nth-child(3){
+#s1f3{
     background-color: green;
+    left: 200%;
 }
 
-.botones{
+#botones{
     position: absolute;
     display: flex;
     width: 10vw;
@@ -37,13 +48,21 @@
 }
 
 button{
-    width: 30px;
-    height: 15px;
+    width: 38px;
+    height: 12px;
     border-radius: 15px;
-    background-color: lightblue;
+    background-color: dimgray;
     border: none;
+
+    border: 1px solid red;
+}
+
+.buttonWhite{
+    background-color: white;
 }
 
 button:hover{
     cursor: pointer;
 }
+
+
