@@ -11,18 +11,53 @@
 
 <body>
     <div id="seccion1">
-        <div id="s1f1" class="fondo"></div>
-        <div id="s1f2" class="fondo"></div>
-        <div id="s1f3" class="fondo"></div>
+        <div id="s1f1" class="fondo">
+            <h1 class="h1">Java</h1>
+            <div class="texto">
+                <p>Java es un lenguaje de programación orientado a objetos, conocido por su portabilidad ("Write Once,
+                    Run
+                    Anywhere"). Fue creado para ser ejecutado en cualquier plataforma que tenga la Java Virtual Machine
+                    (JVM). Es ampliamente usado en desarrollo web, aplicaciones móviles y sistemas empresariales,
+                    destacándose por su seguridad, manejo automático de memoria y multihilación.</p>
+            </div>
+
+            <img class="imagen" src="./imgs/java.png" alt="icono de java">
+        </div>
+        <div id="s1f2" class="fondo">
+            <h1 class="h1">PHP</h1>
+            <div class="texto">
+                <p>PHP es un lenguaje de programación de código abierto, especialmente diseñado para el desarrollo web.
+                    Se
+                    utiliza principalmente para crear sitios web dinámicos e interactivos. PHP se ejecuta en el servidor
+                    y
+                    es fácil de integrar con bases de datos como MySQL. Es conocido por su flexibilidad, su gran
+                    comunidad
+                    de soporte y su uso en plataformas populares como WordPress.</p>
+            </div>
+
+            <img class="imagen" src="./imgs/php.png" alt="icono de php">
+        </div>
+        <div id="s1f3" class="fondo">
+            <h1 class="h1">JavaScript</h1>
+            <div class="texto">
+                <p>Python es un lenguaje de programación de alto nivel, conocido por su sintaxis sencilla y legible. Es
+                    de
+                    propósito general y se utiliza en una amplia variedad de áreas, como desarrollo web, análisis de
+                    datos,
+                    inteligencia artificial, automatización y más. Python es muy popular debido a su amplia comunidad,
+                    extensas bibliotecas y facilidad de aprendizaje, lo que lo convierte en una opción ideal tanto para
+                    principiantes como para desarrolladores experimentados.
+                </p>
+            </div>
+
+            <img class="imagen" src="./imgs/python.png" alt="icono de python">
+        </div>
     </div>
     <div id="seccion2">
-        <div></div>
-        <div></div>
-        <div></div>
         <div id="botones">
-            <button class="buttonWhite boton" onclick="moverFondo(0, this)"></button>
-            <button class="boton" onclick="moverFondo(100, this)"></button>
-            <button class="boton" onclick="moverFondo(200, this)"></button>
+            <button class="buttonWhite boton" onclick="animacion(0, this)"></button>
+            <button class="boton" onclick="animacion(100, this)"></button>
+            <button class="boton" onclick="animacion(200, this)"></button>
         </div>
     </div>
     <script src="script.js"></script>

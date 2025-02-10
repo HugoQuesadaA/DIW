@@ -1,21 +1,28 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.fondoImg{
+.fondoImg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
 }
 
-#seccion1{
+#seccion1 {
     width: 100vw;
     height: 70vh;
 
     position: relative;
+    overflow: hidden;
 }
 
-#seccion1 div{
+#seccion2 {
+    width: 100vw;
+    height: 30vh;
+    background-color: beige;
+}
+
+#seccion1>div {
     width: 100%;
     height: 100%;
 
@@ -23,22 +30,22 @@
     transition: all 1s;
 }
 
-#s1f1{
+#s1f1 {
     background-color: red;
     left: 0;
 }
 
-#s1f2{
+#s1f2 {
     background-color: blue;
     left: 100%;
 }
 
-#s1f3{
+#s1f3 {
     background-color: green;
     left: 200%;
 }
 
-#botones{
+#botones {
     position: absolute;
     display: flex;
     width: 10vw;
@@ -47,22 +54,96 @@
     justify-content: space-around;
 }
 
-button{
+button {
     width: 38px;
     height: 12px;
     border-radius: 15px;
     background-color: dimgray;
-    border: none;
-
-    border: 1px solid red;
+    box-shadow: 10 30 5 rgba(0, 0, 0, 0.5);
 }
 
-.buttonWhite{
+.buttonWhite {
     background-color: white;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
+h1 {
+    margin: 60px 100px 0;
+    color: white;
+    position: absolute;
 
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+
+.animacionTitulo{
+    animation: animacionTitulo 1s 2s 1 forwards;
+}
+
+@keyframes animacionTitulo {
+    0%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+p {
+    margin: 100px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 2rem;
+
+    color: white;
+}
+
+.imagen {
+    width: 20rem;
+    transform: translate(80vw, 20vh);
+    opacity: 0;
+    position: absolute;
+}
+
+.animacionImagen {
+    animation: animacionImagen 1s 1 forwards;
+}
+
+@keyframes animacionImagen {
+    0% {
+        transform: translate(80vw, 20vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(60vw, 20vh);
+        opacity: 1;
+    }
+}
+
+.texto {
+    width: 50vw;
+    position: absolute;
+
+    transform: translateY(100vh) rotate(0deg);
+}
+
+.animacionTexto {
+    animation: animacionTexto 1s 1s 1 forwards;
+}
+
+@keyframes animacionTexto {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0vh) rotate(1080deg);
+    }
+}
