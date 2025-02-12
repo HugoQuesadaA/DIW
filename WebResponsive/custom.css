@@ -1,10 +1,28 @@
 #navegacion{
     width: 70vw;
-    margin: 3vh 15vw;
+    margin: 0 15vw;
+}
+
+#descripcion{
+    width: 50vw;
+    margin: 3vh 25vw;
+}
+
+#footer{
+    width: 80vw;
+    margin: 0 10vw;
 }
 
 #lupa:hover{
     background-color: rgb(168, 163, 163);
+}
+
+#logo{
+    width: 100px;
+}
+
+#logoImg{
+    width: 100%;
 }
 
 .hero-image{
