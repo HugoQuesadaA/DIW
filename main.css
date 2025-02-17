@@ -216,6 +216,10 @@ main h2{
     transform: rotateZ(-1.5deg);
 }
 
+#figura10{
+    transform: rotateZ(-7deg);
+}
+
 @media (max-width: 1200px) {
     .galeria img{
         min-width: 150px;
