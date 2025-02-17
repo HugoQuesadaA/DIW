@@ -14,21 +14,23 @@
 <body>
     <div id="navegacion" class="p-4 d-flex justify-content-around align-items-center">
         <div id="logo">
-            <img id="logoImg" src="imgs/logo2.PNG" alt="logo">
+            <a href="./">
+                <img class="border rounded-circle shadow" id="logoImg" src="imgs/logo2.PNG" alt="logo">
+            </a>
         </div>
         <ul class="nav nav-underline">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa-solid fa-house"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link-dark" href="./pagina2.html">Pagina 2</a>
+                <a class="nav-link link-dark" href="./pagina2.html">Lugares Emblemáticos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link-dark" href="./pagina3.html">Pagina 3</a>
+                <a class="nav-link link-dark" href="./pagina3.html">Reserva</a>
             </li>
         </ul>
         <div class="busqueda align-items-center">
-            <button type="button" class="btn btn-outline-dark">
+            <button id="botonBusqueda" type="button" class="btn btn-outline-dark bg-white">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <input class="ms-2" type="text" placeholder="Buscar...">
@@ -37,7 +39,7 @@
 
     <div class="hero-image">
         <div class="hero-text">
-            <h1>I am John Doe</h1>
+            <h1>Sueña, descubre, Italia.</h1>
         </div>
     </div>
 
@@ -55,11 +57,13 @@
     </div>
 
     <footer id="footer" class="d-flex flex-wrap justify-content-evenly align-items-center border-top border-black py-4">
-        <p class="mb-0">© 2024 Company, Inc. All rights reserved.</p>
+        <p class="mb-0">© Hugo Quesada Álvarez</p>
 
         <ul class="list-unstyled d-flex mb-0">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
             <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook"></i></a></li>
         </ul>
     </footer>
