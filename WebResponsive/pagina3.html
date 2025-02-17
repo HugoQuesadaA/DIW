@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <div id="navegacion" class="p-4 d-flex justify-content-around align-items-center border-bottom border-2 border-dark">
+    <div id="navegacion"
+        class="p-4 d-flex justify-content-around align-items-center border-bottom border-2 border-dark">
         <div id="logo">
             <a href="./index.html">
                 <img class="border rounded-circle shadow" id="logoImg" src="imgs/logo2.PNG" alt="logo">
@@ -37,40 +38,46 @@
         </div>
     </div>
 
-    <div class="container my-5">
-        <form class="row g-3 align-items-center">
-            <div class="col-auto">
-                <label for="nombre" class="form-label">Nombre: </label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+    <div class="container my-5 border-bottom border-black pb-5">
+        <form class="g-3 align-items-center">
+            <div class="row mb-3">
+                <div class="col-auto">
+                    <label for="nombre" class="form-label">Nombre: </label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="col-auto">
+                    <label for="apellidos" class="form-label">Apellidos: </label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+                </div>
+                <div class="col-auto">
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="col-auto">
+                    <label for="dia" class="form-label">Día: </label>
+                    <select class="form-select" id="dia">
+                        <option selected>Seleccione un día</option>
+                        <option value="lunes">Lunes</option>
+                        <option value="martes">Martes</option>
+                        <option value="miercoles">Miércoles</option>
+                        <option value="jueves">Jueves</option>
+                        <option value="viernes">Viernes</option>
+                        <option value="sabado">Sábado</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-auto">
-                <label for="apellidos" class="form-label">Apellidos: </label>
-                <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
+
+            <div class="row">
+                <div class="col-auto d-flex align-self-end">
+                    <button id="botonFormulario" type="submit" class="btn btn-outline-dark bg-white">Enviar</button>
+                </div>
             </div>
-            <div class="col-auto">
-                <label for="email" class="form-label">Email: </label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-            <div class="col-auto">
-                <label for="dia" class="form-label">Día: </label>
-                <select class="form-select" id="dia">
-                    <option selected>Seleccione un día</option>
-                    <option value="lunes">Lunes</option>
-                    <option value="martes">Martes</option>
-                    <option value="miercoles">Miércoles</option>
-                    <option value="jueves">Jueves</option>
-                    <option value="viernes">Viernes</option>
-                    <option value="sabado">Sábado</option>
-                </select>
-            </div>
-            <div class="col-auto d-flex align-self-end">
-                <button id="botonFormulario" type="submit" class="btn btn-outline-dark bg-white">Enviar</button>
-            </div>
+
         </form>
     </div>
 
     <div class="container my-5">
-        <table class="table table-striped text-center">
+        <table class="table table-striped text-center table-hover">
             <thead>
                 <tr>
                     <th>Hora</th>
@@ -131,7 +138,7 @@
             </tbody>
         </table>
     </div>
-    
+
     <footer id="footer" class="d-flex flex-wrap justify-content-evenly align-items-center border-top border-black py-4">
         <p class="mb-0">© Hugo Quesada Álvarez</p>
 
