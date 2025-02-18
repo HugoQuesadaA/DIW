@@ -12,28 +12,47 @@
 </head>
 
 <body>
-    <div id="navegacion" class="p-4 d-flex justify-content-around align-items-center">
-        <div id="logo">
-            <a href="./">
-                <img class="border rounded-circle shadow" id="logoImg" src="imgs/logo2.PNG" alt="logo">
-            </a>
+
+    <div id="navegacion" class="p-4 d-flex justify-content-around align-items-center border-bottom border-2 border-dark row">
+        <div class="col-12 col-md-3 align-items-center text-center mb-3">
+            <div id="logo" class="mx-auto">
+                <a href="./index.html">
+                    <img class="border rounded-circle shadow" id="logoImg" src="imgs/logo2.PNG" alt="logo">
+                </a>
+            </div>
         </div>
-        <ul class="nav nav-underline">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link-dark" href="./pagina2.html">Lugares Emblemáticos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link-dark" href="./pagina3.html">Reserva</a>
-            </li>
-        </ul>
-        <div class="busqueda align-items-center">
-            <button id="botonBusqueda" type="button" class="btn btn-outline-dark bg-white">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <input class="ms-2" type="text" placeholder="Buscar...">
+
+        <div class="col-12 col-md-5 align-items-center text-center mb-3">
+            <ul class="nav nav-underline d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link active link-dark" aria-current="page" href="./index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="./pagina2.html">Lugares Emblemáticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="./pagina3.html">Reserva</a>
+                </li>
+            </ul>
+    
+            <div class="dropdown d-block d-lg-none">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Paginas
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./pagina2.html">Lugares Emblemáticos</a></li>
+                    <li><a class="dropdown-item" href="./pagina3.html">Reserva</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 align-items-center text-center mb-3">
+            <div class="busqueda align-items-center d-flex justify-content-center">
+                <button id="botonBusqueda" type="button" class="btn btn-outline-dark bg-white">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input class="ms-2" type="text" placeholder="Buscar...">
+            </div>
         </div>
     </div>
 
@@ -43,17 +62,25 @@
         </div>
     </div>
 
-    <div id="descripcion">
-        <h2>Italia, un país lleno de historia y belleza natural</h2>
-        <p>Italia es un destino único que combina tradición, arte, y paisajes impresionantes. Desde sus antiguas ruinas
-            romanas hasta sus encantadoras ciudades medievales, Italia es un viaje al corazón de la civilización
-            europea.</p>
-        <h2>Atractivos turísticos</h2>
-        <p>Italia es un paraíso para los viajeros, con una vasta oferta de monumentos icónicos como el Coliseo de Roma,
-            la Torre de Pisa, y la Basílica de San Pedro en el Vaticano. Además, sus regiones ofrecen paisajes
-            espectaculares, como los viñedos de la Toscana, las costas de Amalfi y las mágicas islas de Sicilia y
-            Cerdeña. Cada rincón de Italia invita a explorar y sumergirse en su rica cultura, arquitectura y
-            gastronomía.</p>
+    <div id="descripcion" class="row-12">
+        <div class="col-12">
+            <h2>Italia, un país lleno de historia y belleza natural</h2>
+            <p>Italia es un destino único que combina tradición, arte, y paisajes impresionantes. Desde sus antiguas
+                ruinas
+                romanas hasta sus encantadoras ciudades medievales, Italia es un viaje al corazón de la civilización
+                europea.</p>
+        </div>
+        <div class="col-12">
+            <h2>Atractivos turísticos</h2>
+            <p>Italia es un paraíso para los viajeros, con una vasta oferta de monumentos icónicos como el Coliseo de
+                Roma,
+                la Torre de Pisa, y la Basílica de San Pedro en el Vaticano. Además, sus regiones ofrecen paisajes
+                espectaculares, como los viñedos de la Toscana, las costas de Amalfi y las mágicas islas de Sicilia y
+                Cerdeña. Cada rincón de Italia invita a explorar y sumergirse en su rica cultura, arquitectura y
+                gastronomía.</p>
+        </div>
+
+
     </div>
 
     <footer id="footer" class="d-flex flex-wrap justify-content-evenly align-items-center border-top border-black py-4">

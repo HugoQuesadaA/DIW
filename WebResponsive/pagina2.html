@@ -12,28 +12,46 @@
 </head>
 
 <body>
-    <div id="navegacion" class="p-4 d-flex justify-content-around align-items-center border-bottom border-2 border-dark">
-        <div id="logo">
-            <a href="./index.html">
-                <img class="border rounded-circle shadow" id="logoImg" src="imgs/logo2.PNG" alt="logo">
-            </a>
+    <div id="navegacion" class="p-4 d-flex justify-content-around align-items-center border-bottom border-2 border-dark row">
+        <div class="col-12 col-md-3 align-items-center text-center mb-3">
+            <div id="logo" class="mx-auto">
+                <a href="./index.html">
+                    <img class="border rounded-circle shadow" id="logoImg" src="imgs/logo2.PNG" alt="logo">
+                </a>
+            </div>
         </div>
-        <ul class="nav nav-underline">
-            <li class="nav-item">
-                <a class="nav-link link-dark" href="./index.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pagina2.html">Lugares Emblemáticos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link-dark" href="./pagina3.html">Reserva</a>
-            </li>
-        </ul>
-        <div class="busqueda align-items-center">
-            <button id="botonBusqueda" type="button" class="btn btn-outline-dark bg-white">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <input class="ms-2" type="text" placeholder="Buscar...">
+
+        <div class="col-12 col-md-5 align-items-center text-center mb-3">
+            <ul class="nav nav-underline d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link link-dark" aria-current="page" href="./index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active link-dark" href="./pagina2.html">Lugares Emblemáticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="./pagina3.html">Reserva</a>
+                </li>
+            </ul>
+    
+            <div class="dropdown d-block d-lg-none">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Paginas
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./pagina2.html">Lugares Emblemáticos</a></li>
+                    <li><a class="dropdown-item" href="./pagina3.html">Reserva</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 align-items-center text-center mb-3">
+            <div class="busqueda align-items-center d-flex justify-content-center">
+                <button id="botonBusqueda" type="button" class="btn btn-outline-dark bg-white">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input class="ms-2" type="text" placeholder="Buscar...">
+            </div>
         </div>
     </div>
 
@@ -71,27 +89,27 @@
             </div>
         </div>
 
-        <div class="row mt-4">
-            <div class="col-md-4 text-center">
+        <div class="row mt-4 d-flex">
+            <div class="col-md-4 text-center order-lg-1 order-md-2">
                 <h3>Torre de Pisa</h3>
                 <p>Uno de los monumentos más famosos de Italia, conocido por su inclinación característica. Construida en el siglo XII, esta torre campanario de mármol blanco ha resistido el paso del tiempo y sigue atrayendo a millones de turistas que intentan la icónica foto "sosteniéndola" con sus manos.</p>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center order-lg-2 order-md-3">
                 <h3>Coliseo Romano</h3>
                 <p>Un antiguo anfiteatro en Roma, símbolo del Imperio Romano y su grandeza. Construido en el siglo I d.C., fue escenario de épicos combates de gladiadores, espectáculos públicos y juegos que entretenían a miles de espectadores. Hoy en día, es una de las siete maravillas del mundo moderno.</p>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center order-lg-3 order-md-1">
                 <h3>Fontana de Trevi</h3>
                 <p>Una de las fuentes más bellas del mundo, famosa por la tradición de lanzar monedas para pedir deseos. Diseñada en el siglo XVIII, su escultura barroca representa a Neptuno guiando su carro de conchas marinas tirado por caballos. Lanzar una moneda con la mano derecha sobre el hombro izquierdo asegura, según la leyenda, un regreso a Roma.</p>
                 </p>
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center order-lg-1 order-md-2">
                 <h3>Duomo de Milán</h3>
                 <p>Una de las catedrales góticas más grandes y espectaculares del mundo, ubicada en el corazón de Milán. Su construcción comenzó en 1386 y tardó siglos en completarse. Su impresionante fachada de mármol blanco y sus innumerables agujas la convierten en una joya arquitectónica imperdible.</p>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center order-lg-2 order-md-1">
                 <h3>Cinque Terre</h3>
                 <p>Un conjunto de cinco pintorescos pueblos costeros en la región de Liguria, famosos por sus coloridas casas construidas en los acantilados. Es un destino ideal para quienes buscan naturaleza, senderismo y vistas espectaculares del mar Mediterráneo.</p>
             </div>
